@@ -1,0 +1,30 @@
+#nav-bar{
+  width: 100%;
+  height: 60px; 
+  background-color: #1a8cff;
+  top: 0;  
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 1000;
+  border-bottom: 2px solid #ff704d;
+}
+
+#nav-bar .nav-bar-item {
+  display: inline-block;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.nav-bar-item-active{
+  background-color: #ff704d;
+}
+
+#nav-bar a{
+  color: #ffffff;
+}
+
+#nav-bar li:hover{
+  background-color: #ff704d;
+}
