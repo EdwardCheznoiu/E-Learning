@@ -2,8 +2,9 @@
   background-image: url("../img/background.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   width: 100%;
-  height: 35vh;
+  height: 45vh;
   margin: auto;
   overflow: hidden;
 }
@@ -17,14 +18,13 @@
 
 #head-logo-container h1{
   font-size: 80px;
- 
+  text-shadow: 1px 1px 1px #fff;
 }
 
 #head-logo-container h1:nth-child(1) {
     color: transparent;
     -webkit-text-stroke: 2px #1a8cff;
-     
-  }
+}
   
 #head-logo-container h1:nth-child(2) {
   color: #1a8cff;
@@ -37,26 +37,13 @@
   color: transparent;
   -webkit-text-stroke: 2px #ff704d;
   transform: translate(0%, -100%);
-  
 }
 
 #head-logo-container h1:nth-child(4) {
   color: #ff704d;
   transform: translate(0%, -200%);
   animation: logo-anim 4s ease-in-out infinite;
- 
 }
-
-
-
-/*media width config*/ 
-@media only screen and (max-width: 800px) {
-  #head-logo-container h1{
-    font-size:9vw;
-    
-}
-}
- 
 
 /* header animations */
 @keyframes logo-anim {
@@ -90,13 +77,18 @@
   }
 }
 
-
 /*media width config*/ 
 @media only screen and (max-width: 1370px) {
      #head-logo-container{
        height: 46vh;
      }
  }
+
+ @media only screen and (max-width: 800px) {
+  #head-logo-container h1{
+    font-size:9vw;
+  }
+}
 
 @media only screen and (max-width: 400px) {
      #nav-bar{
