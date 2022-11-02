@@ -1,12 +1,10 @@
 #nav-bar{
   width: 100%;
-  height: 60px; 
-  background-color: #1a8cff;
+  height: 70px; 
+  background-color: rgba(255, 255,255, .5);
   top: 0;  
-  position: sticky;
-  position: -webkit-sticky;
+  position: fixed;
   z-index: 1000;
-  border-bottom: 2px solid #ff704d;
 }
 
 #nav-bar .nav-bar-item {
@@ -14,7 +12,8 @@
   height: 100%;
   padding: 10px;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
+  border-left: 1px solid #000;
 }
 
 .nav-bar-item-active{
@@ -22,9 +21,9 @@
 }
 
 #nav-bar a{
-  color: #ffffff;
+  color: #000;
 }
 
 #nav-bar li:hover{
-  background-color: #ff704d;
+  background-color: #f2f2f2;
 }
