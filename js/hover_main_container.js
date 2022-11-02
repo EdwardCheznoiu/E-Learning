@@ -4,6 +4,7 @@ function moveContentContainer(obj)
     let index = Array.from(obj.parentElement.children).indexOf(obj);
     if(content_container[index].style.transform != "translateX(0%)")
     {
+        content_container[index].style.transition = ".5s";
         content_container[index].style.transform = "translateX(0%)";
     }
 }

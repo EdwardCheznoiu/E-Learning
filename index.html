@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <!--CSS INLCUDES-->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/global.css">
-    <link rel="stylesheet" type="text/css" href="css/nav-bar.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <!--CSS INLCUDES-->
+    <head>
+        <!--CSS INLCUDES-->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/nav-bar.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <!--CSS INLCUDES-->
+
+        <!--METAS-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--METAS-->
+    </head>
+
     <body>
         <!--NAVBAR-->
+        <div id = "section-0"></div>
         <ul id = "nav-bar">
-            <a href="./"><li class = "nav-bar-item">Acasa</li></a>
-            <a href="pages/tutoriale.php"><li  class = "nav-bar-item">Tutoriale</li></a>
-            <a href="pages/teste.php"><li  class = "nav-bar-item">Teste</li></a>
-            <a href="pages/contact.php"><li  class = "nav-bar-item">Contact</li></a>
+            <a href="#section-0"><li class = "nav-bar-item">#Home</li></a>
+            <a href="#section-1"><li  class = "nav-bar-item">#Tutoriale</li></a>
+            <a href="#section-2"><li  class = "nav-bar-item">#Teste</li></a>
+            <a href="#section-3"><li  class = "nav-bar-item">#Contact</li></a>
+            <i class="fa fa-bars"></i>
         </ul>
         <!--NAVBAR-->
 
@@ -28,13 +37,15 @@
         </div>
         <!--HEADER-->
 
-        <!--MAIN CONTENT-->
-        <div id = "content-container">
+        <!--MAIN CONTENT TUTORIALS-->
+        <div class="main-content-tit" id = "section-1">Tutoriale</div>
+        <hr>
+        <div id = "content-container-tut">
             <div class = "content-box"  onmouseover = "moveContentContainer(this)">
                 <div class = "content-box-fig">
                     <div id = "content-box-tit">Bubble Sort</div>
                         dawdadawdawdawdawdawdawdawdawadaaawdawdawawdawdaadawdawdadawdawdawdawdawdawdawdawdawadawdawawdawdawdawd
-                        <a href = "pages/bubblesort.html"><div class = "content-container-btn"><h1>START<h1></div></a>
+                        <a href = "pages/sorting_pages/bubblesort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
                 </div>
             </div>
 
@@ -42,7 +53,7 @@
                 <div class = "content-box-fig">
                     <div id = "content-box-tit">Quick Sort</div>
                         dawdadawdawdawdawdawdawdawdawadaaawdawdawawdawdaadawdawdadawdawdawdawdawdawdawdawdawadawdawawdawdawdawd
-                        <a href = "pages/quicksort.html"><div class = "content-container-btn"><h1>START<h1></div></a>
+                        <a href = "pages/sorting_pages/quicksort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
                 </div>
             </div>
 
@@ -50,7 +61,7 @@
                 <div class = "content-box-fig">
                     <div id = "content-box-tit">Insertion Sort</div>
                         dawdadawdawdawdawdawdawdawdawadaaawdawdawawdawdaadawdawdadawdawdawdawdawdawdawdawdawadawdawawdawdawdawd
-                        <a href = "pages/insertionsort.html"><div class = "content-container-btn"><h1>START<h1></div></a>
+                        <a href = "pages/sorting_pages/insertionsort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
                 </div>
             </div>
 
@@ -58,44 +69,73 @@
                 <div class = "content-box-fig">
                     <div id = "content-box-tit">Selection Sort</div>
                         dawdadawdawdawdawdawdawdawdawadaaawdawdawawdawdaadawdawdadawdawdawdawdawdawdawdawdawadawdawawdawdawdawd
-                        <a href = "pages/selectionsort.html"><div class = "content-container-btn"><h1>START<h1></div></a>
+                        <a href = "pages/sorting_pages/selectionsort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
                 </div>
+            </div>      
+        </div>
+        <!--MAIN CONTENT TUTORIALS-->
+        
+        <!--MAIN CONTENT TESTS-->
+        <div class="main-content-tit" id = "section-2">Teste</div>
+        <hr>
+        <div id = "content-container-test">
+            <div class = "content-box-test">
+                <div id = "content-box-test-tit">Bubble Sort</div>
+                <a href = "pages/heapsort.html"><div class = "content-container-test-btn"><h1>START<h1></div></a>
             </div>
 
-            <div class = "content-box" onmouseover = "moveContentContainer(this)">
-                <div class = "content-box-fig">
-                    <div id = "content-box-tit">Merge Sort</div>
-                        dawdadawdawdawdawdawdawdawdawadaaawdawdawawdawdaadawdawdadawdawdawdawdawdawdawdawdawadawdawawdawdawdawd
-                        <a href = "pages/mergesort.html"><div class = "content-container-btn"><h1>START<h1></div></a>
-                </div>
+            <div class = "content-box-test">
+                <div id = "content-box-test-tit">Quick Sort</div>
+                <a href = "pages/heapsort.html"><div class = "content-container-test-btn"><h1>START<h1></div></a>
             </div>
 
-            <div class = "content-box" onmouseover = "moveContentContainer(this)">
-                <div class = "content-box-fig">
-                    <div id = "content-box-tit">Heap Sort</div>
-                        dawdadawdawdawdawdawdawdawdawadaaawdawdawawdawdaadawdawdadawdawdawdawdawdawdawdawdawadawdawawdawdawdawd
-                        <a href = "pages/heapsort.html"><div class = "content-container-btn"><h1>START<h1></div></a>
-                </div>
+            <div class = "content-box-test">
+                <div id = "content-box-test-tit">Insertion Sort</div>
+                <a href = "pages/heapsort.html"><div class = "content-container-test-btn"><h1>START<h1></div></a>
+            </div>
+
+            <div class = "content-box-test">
+                <div id = "content-box-test-tit">Insertion Sort</div>
+                <a href = "pages/heapsort.html"><div class = "content-container-test-btn"><h1>START<h1></div></a>
             </div>
         </div>
-        <!--MAIN CONTENT-->
+        <!--MAIN CONTENT TUTORIALS-->
 
-        <div id = "about-container">
+        <!--MAIN CONTENT CONTACT-->
+        <div class="main-content-tit" id = "section-3">Contact</div>
+        <hr>
+        <div id = "contact-container">
+            <form id = "contact-form">
+                <label for="fname">Prenume</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Nume</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="email">E-mail</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="textarea">Subiect</label><br>
+                <input type="textarea" id="textarea" name="textarea"><br>
+            </form>
+            <div id = "about">
 
+            </div>
         </div>
+        <!--MAIN CONTENT CONTACT-->
     </body>
 
     <!--FOOTER-->
     <footer>
         <div id = "footer-content">
-            <div class = "footer-circle"></div>
-            <div class = "footer-circle"></div>
+            <div id = "social-btns">
+                <img src="img/social/facebook.png">
+                <img src="img/social/instagram.png">
+                <img src="img/social/twitter.png">
+            </div>
         </div>
     </footer>
     <!--FOOTER-->
 
     <!--JS INLCUDES-->
-    <script src="js/footer_anim.js"></script>
     <script src="js/hover_main_container.js"></script>
+    <script src="js/nav_bar_scroll_opacity.js"></script>
     <!--JS INLCUDES-->
 </html>
