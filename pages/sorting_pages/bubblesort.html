@@ -6,66 +6,170 @@
         <link rel="stylesheet" type="text/css" href="../../css/global.css">
         <link rel="stylesheet" type="text/css" href="../../css/nav-bar.css">
         <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+        <link rel="icon" type="image/x-icon" href="../../img/favicon/favicon.ico">
         <!--CSS INLCUDES-->
-        
+
         <!--METAS-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="E-learning platform for sorting algorithms">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Edward Cheznoiu">
         <!--METAS-->
+
+        <!--TITLE-->
+        <title>E-Learning | Bubblesort - Descriere, Implementare, Video</title>
+        <!--TITLE-->
     </head>
     
     <body>
         <!--NAVBAR-->
-        <ul id = "nav-bar">
-            <a href="../../"><li class = "nav-bar-item">Acasa</li></a>
-            <a href="../../#section-1"><li  class = "nav-bar-item">Tutoriale</li></a>
-            <a href="../../#section-2"><li  class = "nav-bar-item">Teste</li></a>
-            <a href="../../#section-3"><li  class = "nav-bar-item">Contact</li></a>
+        <ul class = "nav-bar">
+            <a href="../../index.html"><li class = "nav-bar-item">Acasa</li></a>
+            <a href="../../index.html #section-1"><li  class = "nav-bar-item">Tutoriale</li></a>
+            <a href="../../index.html #section-2"><li  class = "nav-bar-item">Teste</li></a>
+            <a href="../../index.html #section-3"><li  class = "nav-bar-item">Contact</li></a>
+            <div class="fa-bars"><img src = "../../img/navbar/fabars.png"></div>
         </ul>
         <!--NAVBAR-->
 
-        <div class = "body-capture"></div>
-            <!--TITLE PAGE-->
-            <div id = "sorting-page-logo" style = "background-color: #03a9f4;">BUBBLE SORT</div>
-            <!--TITLE PAGE-->
+        <!--TITLE PAGE-->
+        <div id = "sorting-page-logo" style = "color: #03a9f4;">BUBBLE SORT</div>
+        <!--TITLE PAGE-->
 
-            <!--INFO CONTENT-->
-            <div id = "sorting-page-info-content">
-                <div class = "sorting-page-content-container">
-                    <div class = "resize-box"><img src="../../img/sorting_pages/maximize.png"></div>
-                    <iframe class = "frame-box" src="sorting_pages_content/bubblesort/bubblesort_desc.html"></iframe>
-                </div>
-                <div class = "sorting-page-content-container">
-                    <div class = "resize-box"><img src="../../img/sorting_pages/resize.png"></div>
-                    <iframe class = "frame-box" src="../../index.html"></iframe>
-                </div>
-                <div class = "sorting-page-content-container">
-                    <div class = "resize-box"><img src="../../img/sorting_pages/resize.png"></div>
-                    <iframe class = "frame-box" src="../../index.html"></iframe>
+
+        <!--MAIN CONTENT-->
+        <div id = "main-content">
+
+            <!--NAVBAR LEFT-->
+            <ul id = "nav-bar-left">
+                <li class = "nav-bar-left-item">Descriere</li></a>
+                <li class = "nav-bar-left-item">Implementare</li></a>
+                <li class = "nav-bar-left-item">Video</li></a>
+            </ul>
+            <!--NAVBAR LEFT-->
+
+            <!--DESC CONTENT-->
+            <div  class = "sorting-page-content-box">
+                <div class = sorting-page-contet>
+                    <div class = "sorting-page-contet-desc">
+                        <h2>Cunoscuta sub numele BubbleSort sau metoda bulelor, aceasta metoda de sortare se bazeaza pe urmatoarea idee:</h2>
+                        <br>
+                        <li>fie un vector X[] cu n elemente</li> 
+                        <li>parcurgem vectorul si pentru oricare doua elemente invecinate care nu sunt in ordinea dorita, le interschimbam valorile</li>
+                        <li>dupa o singura parcurgere, vectorul nu se va sorta, dar putem repeta parcurgerea</li>
+                        <li>daca la o parcurgere nu se face nicio interschimbare, vectorul este sortat</li>
+                        <br>
+                        <h2>O reprezentare a algoritmului este:</h2>
+                        <br>
+                        <li>cat timp vectorul nu este sortat</li>
+                        <li>presupunem ca vectorul este sortat</li>
+                        <li>parcurgem vectorul</li>
+                        <li>daca doua elemente invecinate nu sunt in ordinea dorita</li>
+                        <li>le interschimbam</li>
+                        <li>schimbam presupunerea initiala</li>
+                        <br>
+                        <h2>Complexitate</h2>
+                        <br>
+                        <h2>Vizualizare grafica interactiva</h2>
+                    </div>
                 </div>
             </div>
-            <!--INFO CONTENT-->
+            <!--DESC CONTENT-->
 
-            <!--EXAMPLE CONTENT-->
-            <div id = "sorting-page-exemple">
-                
+            <!--IMPL CONTENT-->
+            <div class = "sorting-page-content-box">
+                <div class = sorting-page-contet>
+                    <div class = "sorting-page-contet-impl">
+                        <h2>Exemplu: Sa ordonam urmatorul vector, in care n=5:</h2><br>
+                        <img src="../../img/sorting_pages_info/bubblesort/1.png" alt=""><br><br>
+                        
+                        <div class = "imgs-cont">
+                            <div class = "imgs-cont-box">
+                                <p>Dupa prima parcurgere vectorul are urmatoarea structura:</p><br>
+                                <img src="../../img/sorting_pages_info/bubblesort/2.png" alt=""><br><br>
+                                <p>Deoarece am facut interschimbari, nu stim daca vectorul este ordonat.</p>
+                            </div>
+                            <div class = "imgs-cont-box">
+                                <p>Dupa o noua parcurgere, vectorul este:</p><br>
+                                <img src="../../img/sorting_pages_info/bubblesort/2.png" alt=""><br><br>
+                                <p>Si acum am facut interschimbari, nu stim daca vectorul este ordonat (chiar daca el este).</p>
+                            </div>
+                            <div class = "imgs-cont-box">
+                                <p>Il parcurgem din nou:</p><br>
+                                <img src="../../img/sorting_pages_info/bubblesort/3.png" alt=""><br><br>
+                                <p>Deoarece nu am facut nicio interschimbare, decidem ca vectorul este ordonat</p>
+                            </div>
+                        </div><br>
+
+                        <h2>O secventa de cod in C++ ar fi urmatoarea</h2><br>
+                        <textarea name="textareacode" id = "textareacode">
+                            int n, v[100];
+                            bool sortat;
+                            do
+                            {
+                            sortat = true;
+                            for(int i = 0 ; i < n - 1 ; i ++)
+                                if(v[i] > v[i+1])
+                                {
+                                int aux = v[i];
+                                v[i] = v[i+1];
+                                v[i+1] = aux;
+                                sortat = false;
+                                }
+                            }
+                            while(!sortat);
+                        </textarea>
+                    </div>
+                </div>
             </div>
-            <!--EXAMPLE CONTENT-->
-        
+            <!--IMPL CONTENT-->
+
+            <!--VIDEO CONTENT-->
+            <div class = "sorting-page-content-box">
+                <div class = sorting-page-contet>
+                    <div class = "sorting-page-content-video">
+                        <video  controls>
+                            <source src="movie.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <!--IMPL CONTENT-->
+
+            <!--RECOMANDED CONTENT-->
+            <div class = "sorting-page-content-box"> 
+                <div id= "recomanded-algo">
+                    <h1>S-ar putea sa te intereseze si urmatoarele tutoriale</h1>
+                    <div class = "recomanded-algo-gallery">
+                        <a href="quicksort.html"><div class = "recomanded-algo-gallery-cell">Quicksort</div></a>
+                        <a href="insertionsort.html"><div class = "recomanded-algo-gallery-cell">Insertionsort</div></a>
+                        <a href="selectionsort.html"><div class = "recomanded-algo-gallery-cell">Selectionsort</div></a>
+                    </div>
+                </div>
+            </div>
+            <!--RECOMANDED CONTENT-->
+        </div> 
+        <!--MAIN CONTENT-->
+    </body>
+
     <!--FOOTER-->
     <footer>
         <div id = "footer-content">
             <div id = "social-btns">
-                <img src="img/social/facebook.png">
-                <img src="img/social/instagram.png">
-                <img src="img/social/twitter.png">
+                <img src="../../img/social/facebook.png">
+                <img src="../../img/social/instagram.png">
+                <img src="../../img/social/twitter.png">
             </div>
         </div>
     </footer>
     <!--FOOTER-->
-    </body>
 
-      <!--JS INLCUDES-->
-      <script src="../../js/nav_bar_scroll_opacity.js"></script>
-      <script src="../../js/sorting_pages_resize_cont.js"></script>
-      <!--JS INLCUDES-->
+    <!--JS INLCUDES-->
+    <script src="../../js/nav_bar_scroll_opacity.js"></script>
+    <script src="../../js/sorting_pages_resize_cont.js"></script>
+    <script src="../../js/sorting_pages_tabs.js"></script>
+    <!--JS INLCUDES-->
+
 </html>

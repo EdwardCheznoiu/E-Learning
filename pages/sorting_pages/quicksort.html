@@ -1,33 +1,127 @@
 <html>
-    <link rel="stylesheet" type="text/css" href="../css/sorting_pages.css">
-    <link rel="stylesheet" type="text/css" href="../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../css/global.css">
-    <link rel="stylesheet" type="text/css" href="../css/nav-bar.css">
-    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <head>
+        <!--CSS INLCUDES-->
+        <link rel="stylesheet" type="text/css" href="../../css/sorting_pages.css">
+        <link rel="stylesheet" type="text/css" href="../../css/header.css">
+        <link rel="stylesheet" type="text/css" href="../../css/global.css">
+        <link rel="stylesheet" type="text/css" href="../../css/nav-bar.css">
+        <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+        <link rel="icon" type="image/x-icon" href="../../img/favicon/favicon.ico">
+        <!--CSS INLCUDES-->
+
+        <!--METAS-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="E-learning platform for sorting algorithms">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Edward Cheznoiu">
+        <!--METAS-->
+
+        <!--TITLE-->
+        <title>E-Learning | Quicksort - Descriere, Implementare, Video</title>
+        <!--TITLE-->
+    </head>
+    
     <body>
         <!--NAVBAR-->
-        <ul id = "nav-bar">
-            <a href="../"><li class = "nav-bar-item">Acasa</li></a>
-            <a href="../#section-1"><li  class = "nav-bar-item">Tutoriale</li></a>
-            <a href="../#section-2"><li  class = "nav-bar-item">Teste</li></a>
-            <a href="../#section-3"><li  class = "nav-bar-item">Contact</li></a>
+        <ul class = "nav-bar">
+            <a href="../../index.html"><li class = "nav-bar-item">Acasa</li></a>
+            <a href="../../index.html #section-1"><li  class = "nav-bar-item">Tutoriale</li></a>
+            <a href="../../index.html #section-2"><li  class = "nav-bar-item">Teste</li></a>
+            <a href="../../index.html #section-3"><li  class = "nav-bar-item">Contact</li></a>
+            <div class="fa-bars"><img src = "img/navbar/fabars.png"></div>
         </ul>
         <!--NAVBAR-->
 
         <!--TITLE PAGE-->
-        <div id = "sorting-page-logo" style = "background-color: #ff704d;">QUICK SORT</div>
+        <div id = "sorting-page-logo" style = "color: #ff704d;">QUICK SORT</div>
         <!--TITLE PAGE-->
 
-        <!--INFO CONTENT-->
 
-        <!--INFO CONTENT-->
+        <!--MAIN CONTENT-->
+        <div id = "main-content">
 
-        <!--EXAMPLE CONTENT-->
+            <!--NAVBAR LEFT-->
+            <ul id = "nav-bar-left">
+                <li class = "nav-bar-left-item">Descriere</li>
+                <li class = "nav-bar-left-item">Implementare</li>
+                <li class = "nav-bar-left-item">Video</li>
+            </ul>
+            <!--NAVBAR LEFT-->
 
-        <!--EXAMPLE CONTENT-->
+            <!--DESC CONTENT-->
+            <div  class = "sorting-page-content-box"  id = "description">
+                <div class = sorting-page-contet>
+                    <div class = "sorting-page-contet-desc">
+                        <h2>QuickSort sau Sortarea rapida este o metoda eficienta de sortare a unui tablou, descoperita in 1960 de programatorul britanic C.A.R. Hoare</h2><br>
+                        <p><b>Etapa Divide:</b>  Vectorul x, format din elementele aflate intre indicii i si j, notat in continuare x[i..j], este impartit in doi subvectori x[i ..m] si x[m+1 ..j], 
+                        fiecare subvector avand cel putin un element si fiecare element din primul subvector fiind mai mic sau egal decat oricare element din cel de-al doilea subvector.</p> 
+                        <p><b>Etapa Impera:</b> Cele doua parti sunt sortate apeland recursiv, pana cand se ajunge la subvectori formati dintr-un singur element.</p> 
+                        <p><b>Combinarea:</b> Avand in vedere ca fiecare subvector este sortat si ca cel mai mare element din subvectorul 
+                        stang este mai mic decat cel mai mic element din subvectorul drept, atunci intregul vector va fi sortat.</p> <br>
+                        <h2>Algoritmul este de tip divide et impera; el sorteaza o secventa a tabloului (initial intreg tabloul), astfel:</h2><br>
+                        <li>se alege un element special al listei, numit pivot</li>
+                        <li>se ordoneaza elementele listei, astfel incat toate elementele din stanga pivotului sa fie mai mici sau egale cu acesta, si toate elementele din dreapta pivotului sa fie mai mari sau egale cu acesta</li>
+                        <li>se continua recursiv cu secventa din stanga pivotului si cu cea din dreapta lui.</li><br>
+                        <h2>Complexitate</h2><br>
+                        <h2>Vizualizare grafica interactiva</h2>
+                    </div>
+                </div>
+            </div>
+            <!--DESC CONTENT-->
 
-        <!--FOOTER-->
+            <!--IMPL CONTENT-->
+            <div class = "sorting-page-content-box"  id = "implementation">
+                <div class = sorting-page-contet>
+                    
+                </div>
+            </div>
+            <!--IMPL CONTENT-->
 
-        <!--FOOTER-->
+            <!--VIDEO CONTENT-->
+            <div class = "sorting-page-content-box"  id = "video">
+                <div class = sorting-page-contet>
+                    <div class = "sorting-page-content-video">
+                        <video  controls>
+                            <source src="movie.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div> 
+            <!--VIDEO CONTENT-->
+
+            <!--RECOMANDED CONTENT-->
+            <div class = "sorting-page-content-box"> 
+                <div id= "recomanded-algo">
+                    <h1>S-ar putea sa te intereseze si urmatoarele tutoriale</h1>
+                    <div class = "recomanded-algo-gallery">
+                        <a href="bubblesort.html"><div class = "recomanded-algo-gallery-cell">Bubblesort</div></a>
+                        <a href="insertionsort.html"><div class = "recomanded-algo-gallery-cell">Insertionsort</div></a>
+                        <a href="selectionsort.html"><div class = "recomanded-algo-gallery-cell">Selectionsort</div></a>
+                    </div>
+                </div>
+            </div>
+            <!--RECOMANDED CONTENT-->
+        </div> 
+        <!--MAIN CONTENT-->
     </body>
+
+    <!--FOOTER-->
+    <footer>
+        <div id = "footer-content">
+            <div id = "social-btns">
+                <img src="../../img/social/facebook.png">
+                <img src="../../img/social/instagram.png">
+                <img src="../../img/social/twitter.png">
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER-->
+
+    <!--JS INLCUDES-->
+    <script src="../../js/nav_bar_scroll_opacity.js"></script>
+    <script src="../../js/sorting_pages_resize_cont.js"></script>
+    <script src="../../js/sorting_pages_tabs.js"></script>
+    <!--JS INLCUDES-->
 </html>

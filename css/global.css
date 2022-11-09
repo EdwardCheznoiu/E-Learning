@@ -1,24 +1,24 @@
+/* GLOBAL CSS - Acest fisier css este inlcus in toate paginile site-ului*/
+
 *{
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth; 
 }
+
 body{
     background-color: #e6e6e6;
     width: 100%;
     margin: auto; 
 }
 
+a{
+    text-decoration: none;
+}
+
 h1, p{
     font-family: serif;;
 }
 
-
-/*media width config*/ 
-@media only screen and (max-width: 1370px) {
-    body{
-      width: 100%;
-    }
- }
-  
+/* GLOBAL CSS */
