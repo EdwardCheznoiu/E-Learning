@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--TITLE-->
+        <title>E-Learning | Pagina principala - Tutoriale, Teste, Contact</title>
+        <!--TITLE-->
+        
         <!--CSS INLCUDES-->
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/global.css">
         <link rel="stylesheet" type="text/css" href="css/nav-bar.css">
         <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
         <!--CSS INLCUDES-->
 
         <!--METAS-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="E-learning platform for sorting algorithms">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Edward Cheznoiu">
         <!--METAS-->
     </head>
 
     <body>
         <!--NAVBAR-->
         <div id = "section-0"></div>
-        <ul id = "nav-bar">
+        <ul class = "nav-bar">
             <a href="#section-0"><li class = "nav-bar-item">#Home</li></a>
             <a href="#section-1"><li  class = "nav-bar-item">#Tutoriale</li></a>
             <a href="#section-2"><li  class = "nav-bar-item">#Teste</li></a>
             <a href="#section-3"><li  class = "nav-bar-item">#Contact</li></a>
-            <i class="fa fa-bars"></i>
+            <div class = "fa-bars">
+                <div class = "line"></div>
+                <div class = "line"></div>
+                <div class = "line"></div>
+            </div>
         </ul>
         <!--NAVBAR-->
 
@@ -44,32 +56,40 @@
             <div class = "content-box"  onmouseover = "moveContentContainer(this)">
                 <div class = "content-box-fig">
                     <div id = "content-box-tit">Bubble Sort</div>
-                        dawdadawdawdawdawdawdawdawdawadaaawdawdawawdawdaadawdawdadawdawdawdawdawdawdawdawdawadawdawawdawdawdawd
-                        <a href = "pages/sorting_pages/bubblesort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
+                    <div class = "content-box-fig-desc">
+                        Bubblesort este cel mai simplu algoritm de sortare care functioneaza schimband in mod repetat elementele adiacente daca acestea sunt in ordinea gresita. 
+                    </div>
+                    <a href = "pages/sorting_pages/bubblesort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
                 </div>
             </div>
 
             <div class = "content-box" onmouseover = "moveContentContainer(this)">
                 <div class = "content-box-fig">
                     <div id = "content-box-tit">Quick Sort</div>
-                        dawdadawdawdawdawdawdawdawdawadaaawdawdawawdawdaadawdawdadawdawdawdawdawdawdawdawdawadawdawawdawdawdawd
-                        <a href = "pages/sorting_pages/quicksort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
+                    <div class = "content-box-fig-desc">
+                        QuickSort sau Sortarea rapida este o metoda eficienta de sortare a unui tablou, descoperita in 1960 de programatorul britanic C.A.R. Hoare
+                    </div>
+                    <a href = "pages/sorting_pages/quicksort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
                 </div>
             </div>
 
             <div class = "content-box" onmouseover = "moveContentContainer(this)">
                 <div class = "content-box-fig">
                     <div id = "content-box-tit">Insertion Sort</div>
-                        dawdadawdawdawdawdawdawdawdawadaaawdawdawawdawdaadawdawdadawdawdawdawdawdawdawdawdawadawdawawdawdawdawd
-                        <a href = "pages/sorting_pages/insertionsort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
+                    <div class = "content-box-fig-desc">
+                        Insertionsort este un algoritm simplu de sortare care functioneaza similar modului in care sortati cartile de joc in mainile dvs. 
+                    </div>
+                    <a href = "pages/sorting_pages/insertionsort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
                 </div>
             </div>
 
             <div class = "content-box" onmouseover = "moveContentContainer(this)">
                 <div class = "content-box-fig">
                     <div id = "content-box-tit">Selection Sort</div>
-                        dawdadawdawdawdawdawdawdawdawadaaawdawdawawdawdaadawdawdadawdawdawdawdawdawdawdawdawadawdawawdawdawdawd
-                        <a href = "pages/sorting_pages/selectionsort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
+                    <div class = "content-box-fig-desc">
+                        Selectionsort sorteaza o matrice gasind in mod repetat elementul minim (luand in considerare ordinea crescatoare) din partea nesortata si punandu-l la inceput.
+                    </div>
+                    <a href = "pages/sorting_pages/selectionsort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
                 </div>
             </div>      
         </div>
@@ -81,43 +101,73 @@
         <div id = "content-container-test">
             <div class = "content-box-test">
                 <div id = "content-box-test-tit">Bubble Sort</div>
-                <a href = "pages/heapsort.html"><div class = "content-container-test-btn"><h1>START<h1></div></a>
+                <a href = "pages/testing_pages/bubblesort.html"><div class = "content-container-test-btn"><h1>START<h1></div></a>
             </div>
 
             <div class = "content-box-test">
                 <div id = "content-box-test-tit">Quick Sort</div>
-                <a href = "pages/heapsort.html"><div class = "content-container-test-btn"><h1>START<h1></div></a>
+                <a href = "pages/testing_pages/quicksort.html""><div class = "content-container-test-btn"><h1>START<h1></div></a>
             </div>
 
             <div class = "content-box-test">
                 <div id = "content-box-test-tit">Insertion Sort</div>
-                <a href = "pages/heapsort.html"><div class = "content-container-test-btn"><h1>START<h1></div></a>
+                <a href = "pages/testing_pages/insertionsort.html"><div class = "content-container-test-btn"><h1>START<h1></div></a>
             </div>
 
             <div class = "content-box-test">
                 <div id = "content-box-test-tit">Insertion Sort</div>
-                <a href = "pages/heapsort.html"><div class = "content-container-test-btn"><h1>START<h1></div></a>
+                <a href = "pages/testing_pages/selectionsort.html"><div class = "content-container-test-btn"><h1>START<h1></div></a>
             </div>
         </div>
-        <!--MAIN CONTENT TUTORIALS-->
+        <!--MAIN CONTENT TESTS-->
 
         <!--MAIN CONTENT CONTACT-->
         <div class="main-content-tit" id = "section-3">Contact</div>
         <hr>
         <div id = "contact-container">
-            <form id = "contact-form">
-                <label for="fname">Prenume</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Nume</label><br>
-                <input type="text" id="lname" name="lname"><br>
-                <label for="email">E-mail</label><br>
-                <input type="text" id="email" name="email"><br>
-                <label for="textarea">Subiect</label><br>
-                <input type="textarea" id="textarea" name="textarea"><br>
-            </form>
             <div id = "about">
-
+                <h1>Programeaza o intalnire</h1>
+                <p>Programeaza o intalnire cu unul dintre consultantii nostrii si vei fi contactat cat de curand posibil</p>
             </div>
+            <table id = "tbl">
+                <form>
+                    <tr>
+                        <td>
+                            <label for="fname">Prenume</label><br>
+                            <input type="text" id="fname" name="fname">
+                        </td> 
+                        <td>
+                            <label for="lname">Nume</label><br>
+                            <input type="text" id="lname" name="lname">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">E-mail</label><br>
+                            <input type="text" id="email" name="email"><br>
+                        </td>
+                        <td>
+                            <label for="text">Nr. Telefon</label><br>
+                            <input type="text" id="tel" name="tel"><br>
+                        </td>
+                    </tr>
+
+                    <tr >
+                        <td colspan="2">
+                            <label for="textarea">Ceva despre tine</label><br>
+                            <textarea type="textarea" id="textarea" name="textarea"></textarea><br>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td colspan="2">
+                            <div id = "submit-btn">Trimite</div>
+                        </td>
+                    </tr>
+                    
+                </form>
+            </table>            
+            </form>
         </div>
         <!--MAIN CONTENT CONTACT-->
     </body>
@@ -137,5 +187,6 @@
     <!--JS INLCUDES-->
     <script src="js/hover_main_container.js"></script>
     <script src="js/nav_bar_scroll_opacity.js"></script>
+    <script src="js/nav_bar_mobile.js"></script>
     <!--JS INLCUDES-->
 </html>

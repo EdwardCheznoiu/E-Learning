@@ -1,85 +1,120 @@
-.body-capture{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0, .7);
-    z-index: 100;
-    position: fixed;
-    display: none;
-}
-
-.body-capture-active{
-    display: block;
-    z-index: 10;
-}
+/* Sorting pages*/
 
 #sorting-page-logo{
-    font-size: 12vw;
-    height: 30vh;
+    width: 80%;
+    font-size: 6vw;
     text-align: center;
-    color: #fff;
-    text-shadow: 4px 2px 4px #1a1a1a;
+    text-shadow: 4px 4px 4px #1a1a1a;
     font-weight: bold;
-    margin: 70px auto; 
-    padding: 20px;
-    background-attachment: fixed;
+    margin-top: 70px; 
+    text-align: center;
 }
 
-#sorting-page-info-content{
-    display: grid; 
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    min-height: 40vh;
-	margin: auto;
-}
-
-.sorting-page-content-container{
-    height: 400px; 
-    min-width: 300px;
-    min-height: 300px;
+#main-content{
+    width: 100%; 
+    height: auto;
     background-color: #fff;
-    margin: 20px; 
-    overflow: auto;
-    overflow: hidden;
+}
+
+#nav-bar-left{
+    width: 20%; 
+    height: auto;
+    height: 100%;
+    float: left;
+    position: fixed;
+}
+
+#nav-bar-left .nav-bar-left-item{
+    text-align: center;
+    height: 45px;
+    border: 1px solid #fff;
+    font-size: 25px;
+    padding: 7px;
+    margin: 20px;
+    cursor: pointer;
+    color: #000;
+    list-style-type: none;
+}
+
+#nav-bar-left .nav-bar-left-item:first-child{
+    background-color: #ff8533;
+    color: #fff;
+}
+
+.sorting-page-content-box{
+    width: 80%; 
+    min-height: 500px;
+    float: right;
+    padding: 20px;
+    display: none;
     position: relative;
 }
 
-.sorting-page-content-container-active{
-    position: absolute;
-    width: 80%;
-    height: 800px;
-    left: 10%;
-    top: 15%; 
-    z-index: 10;
-    transition: .5s;
-    resize: both;
+.sorting-page-content-box:nth-child(2){
+    display: block;
 }
 
-#sorting-page-exemple{
-    width: 100%; 
-    height: 30vh;
+.sorting-page-content-box:last-child{
+    display: block;
+    min-height: auto;
 }
 
-.resize-box{
-    width: 30px;
-    height: 30px;
-    top: 0;
-    position: absolute;
-    margin: 5px;
+.sorting-page-contet-desc, .sorting-page-contet-impl p, li{
+    font-size: 20px;
 }
 
-.resize-box:hover{
-    transform: scale(1.1);
-    transition: .5s;
-    cursor: pointer;
+.sorting-page-contet-impl textarea{
+    width: 50%; 
+    height: 300px;
+    text-align: left;
+    resize: none;
 }
 
-.resize-box img{
+.sorting-page-content-video{
+    width: 50%;
+    height: 400px; 
+    margin: auto;
+}
+
+.sorting-page-content-video video{
     width: 100%;
     height: 100%;
-    z-index: 1;
 }
 
-.frame-box{
-    width: 100%;
-    height: 100%;
-    border: none;
+.imgs-cont{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: auto;
 }
+
+/* Sorting pages*/
+
+/* Schimbam modul de vizualizare in functie de dimensiunea ecranului */ 
+@media only screen and (max-width: 1200px) {
+
+    #sorting-page-logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav-bar-left{
+        width: 100%; 
+        height: 50px;
+        position: relative;
+    }
+
+    #nav-bar-left .nav-bar-left-item{
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .sorting-page-content-box{
+        width: 100%;
+    }
+    
+    .sorting-page-content-video{
+        width: 100%;
+    }
+
+ }
+  

@@ -6,6 +6,7 @@ for(let i = 0; i < resize_btn.length; i++){
     resize_btn[i].addEventListener('click', () =>{
         content_container[i].classList.toggle('sorting-page-content-container-active'); 
         body_capture.classList.toggle('body-capture-active');
+        resize_btn[i].style.zIndex = "1";
     });
 }
 

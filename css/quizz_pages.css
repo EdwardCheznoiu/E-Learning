@@ -1,0 +1,67 @@
+/* Quiz pages */
+
+#sorting-page-logo{
+    width: 100%;
+    font-size: 6vw;
+    text-align: center;
+    text-shadow: 4px 4px 4px #1a1a1a;
+    font-weight: bold;
+    margin-top: 70px; 
+    text-align: center;
+}
+
+#quizz-content{
+    width: 50%; 
+    margin: auto;
+    padding: 20px;
+}
+
+.quizz-box{
+    width: 100%; 
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow:  4px 4px 9px #9b9b9b;
+}
+
+#quizz-content .quizz-box-question{
+    font-size: 30px;
+}
+
+#submit-btn{
+    width: 250px;
+    margin: 20px auto;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid #000;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 1px 1px 1px #1a1a1a;
+    border-radius: 10px;
+    background: linear-gradient(to left, #03a9f4 50%, #ff704d 50%) right;
+    background-size: 200% 100%;
+    transition: .3s ease-out;
+}
+
+#submit-btn:hover{
+    background-position: left;
+}
+/* Quiz page */
+
+/* Schimbam modul de vizualizare in functie de dimensiunea ecranului */ 
+@media only screen and (max-width: 1250px) {
+    #quizz-content{
+        width: 70%; 
+    }  
+
+ }
+
+ @media only screen and (max-width: 700px) {
+    #quizz-content{
+        width: 100%; 
+    }  
+
+ }
