@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="../../css/global.css">
         <link rel="stylesheet" type="text/css" href="../../css/nav-bar.css">
         <link rel="stylesheet" type="text/css" href="../../css/footer.css">
-        <link rel="icon" type="image/x-icon" href="../../img/favicon/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="../../img/favicon/favicon.png">
         <!--CSS INLCUDES-->
 
         <!--METAS-->
@@ -24,11 +24,18 @@
     <body>
         <!--NAVBAR-->
         <ul class = "nav-bar">
-            <a href="../../index.html"><li class = "nav-bar-item">Acasa</li></a>
-            <a href="../../index.html #section-1"><li  class = "nav-bar-item">Tutoriale</li></a>
-            <a href="../../index.html #section-2"><li  class = "nav-bar-item">Teste</li></a>
-            <a href="../../index.html #section-3"><li  class = "nav-bar-item">Contact</li></a>
-            <div class="fa-bars"><img src = "img/navbar/fabars.png"></div>
+            <a href="../../index.html"><li class = "nav-bar-item">#Home</li></a>
+            <a href="../../index.html #section-1"><li  class = "nav-bar-item">#Tutoriale</li></a>
+            <a href="../../index.html #section-2"><li  class = "nav-bar-item">#Teste</li></a>
+            <div class = "fa-bars">
+                <div class = "line"></div>
+                <div class = "line"></div>
+                <div class = "line"></div>
+            </div>
+            <div class = "logo-container">
+                <img id = "logo-img" src = "../../img/navbar/logo.png">
+                <h1>Sorting Playground</h1>
+            </div>
         </ul>
         <!--NAVBAR-->
 
@@ -40,11 +47,24 @@
         <!--MAIN CONTENT-->
         <div id = "main-content">
 
-            <!--NAVBAR LEFT-->
-            <ul id = "nav-bar-left">
-                <li class = "nav-bar-left-item">Descriere</li>
-                <li class = "nav-bar-left-item">Implementare</li>
-                <li class = "nav-bar-left-item">Video</li>
+             <!--NAVBAR LEFT-->
+             <ul id = "nav-bar-left">
+                <div class = "nav-bar-left-item">
+                    <img src="../../img/sidebar_sorting_pag/desc.png" alt="Descriere">
+                    <p>Descriere</p>
+                </div>
+                <div class = "nav-bar-left-item">
+                    <img src="../../img/sidebar_sorting_pag/impl.png" alt="Implementare">
+                    <p>Implementare</p>
+                </div>
+                <div class = "nav-bar-left-item">
+                    <img src="../../img/sidebar_sorting_pag/video.png" alt="Implementare">
+                    <p>Video</p>
+                </div>
+                <div class = "nav-bar-left-item">
+                    <img src="../../img/sidebar_sorting_pag/interactiv.png" alt="Implementare">
+                    <p>Interactiv</p>
+                </div>
             </ul>
             <!--NAVBAR LEFT-->
 
@@ -52,18 +72,17 @@
             <div  class = "sorting-page-content-box"  id = "description">
                 <div class = sorting-page-contet>
                     <div class = "sorting-page-contet-desc">
+                        <h2>Algoritmul este de tip divide et impera; el sorteaza o secventa a tabloului (initial intreg tabloul), astfel:</h2><br>
+                        <li>se alege un element special al listei, numit pivot</li>
+                        <li>se ordoneaza elementele listei, astfel incat toate elementele din stanga pivotului sa fie mai mici sau egale cu acesta, si toate elementele din dreapta pivotului sa fie mai mari sau egale cu acesta</li>
+                        <li>se continua recursiv cu secventa din stanga pivotului si cu cea din dreapta lui.</li><br>
                         <h2>QuickSort sau Sortarea rapida este o metoda eficienta de sortare a unui tablou, descoperita in 1960 de programatorul britanic C.A.R. Hoare</h2><br>
                         <p><b>Etapa Divide:</b>  Vectorul x, format din elementele aflate intre indicii i si j, notat in continuare x[i..j], este impartit in doi subvectori x[i ..m] si x[m+1 ..j], 
                         fiecare subvector avand cel putin un element si fiecare element din primul subvector fiind mai mic sau egal decat oricare element din cel de-al doilea subvector.</p> 
                         <p><b>Etapa Impera:</b> Cele doua parti sunt sortate apeland recursiv, pana cand se ajunge la subvectori formati dintr-un singur element.</p> 
                         <p><b>Combinarea:</b> Avand in vedere ca fiecare subvector este sortat si ca cel mai mare element din subvectorul 
                         stang este mai mic decat cel mai mic element din subvectorul drept, atunci intregul vector va fi sortat.</p> <br>
-                        <h2>Algoritmul este de tip divide et impera; el sorteaza o secventa a tabloului (initial intreg tabloul), astfel:</h2><br>
-                        <li>se alege un element special al listei, numit pivot</li>
-                        <li>se ordoneaza elementele listei, astfel incat toate elementele din stanga pivotului sa fie mai mici sau egale cu acesta, si toate elementele din dreapta pivotului sa fie mai mari sau egale cu acesta</li>
-                        <li>se continua recursiv cu secventa din stanga pivotului si cu cea din dreapta lui.</li><br>
                         <h2>Complexitate</h2><br>
-                        <h2>Vizualizare grafica interactiva</h2>
                     </div>
                 </div>
             </div>
@@ -72,7 +91,11 @@
             <!--IMPL CONTENT-->
             <div class = "sorting-page-content-box"  id = "implementation">
                 <div class = sorting-page-contet>
-                    
+                    <div class = "sorting-page-contet-impl">
+                    <h2>O secventa de cod in C++ ar fi urmatoarea</h2><br>
+                        
+                    <textarea name="textareacode" id = "textareacode" readonly></textarea>
+                    </div>
                 </div>
             </div>
             <!--IMPL CONTENT-->
@@ -90,6 +113,16 @@
                 </div>
             </div> 
             <!--VIDEO CONTENT-->
+
+             <!--INTERACTIV CONTENT-->
+             <div class = "sorting-page-content-box">
+                <div class = sorting-page-contet>
+                    <div class = "sorting-page-content-video">
+                        
+                    </div>
+                </div>
+            </div>
+            <!--INTERACTIV CONTENT-->
 
             <!--RECOMANDED CONTENT-->
             <div class = "sorting-page-content-box"> 
@@ -119,9 +152,12 @@
     </footer>
     <!--FOOTER-->
 
-    <!--JS INLCUDES-->
-    <script src="../../js/nav_bar_scroll_opacity.js"></script>
-    <script src="../../js/sorting_pages_resize_cont.js"></script>
-    <script src="../../js/sorting_pages_tabs.js"></script>
-    <!--JS INLCUDES-->
+     <!--JS INLCUDES-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="../../js/nav_bar_scroll.js"></script>
+     <script src="../../js/recomanded_gallery_bg.js"></script>
+     <script src="../../js/nav_bar_mobile.js"></script>
+     <script src="../../js/text_area_file_writter.js"></script>
+     <script src="../../js/sorting_pages_tabs.js"></script>
+     <!--JS INLCUDES-->
 </html>

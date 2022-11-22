@@ -1,10 +1,17 @@
 let fabar = document.querySelector(".fa-bars");
 let navbar = document.querySelector(".nav-bar");
-let navbarItems = document.querySelector(".nav-bar-item");
-
+let isFabBtnClicked = false; 
 fabar.addEventListener("click", function() {
-    navbar.classList.toggle("nav-bar-active");
-    navbarItems.classList.toggle("nav-bar-item-active");
+    isFabBtnClicked  = !isFabBtnClicked;
+    if(isFabBtnClicked){
+        navbar.classList.remove("nav-bar");
+        navbar.classList.remove("nav-bar-scrolling");
+        navbar.classList.add("nav-bar-active");
+    }
+    else{
+        navbar.classList.add("nav-bar");
+        navbar.classList.remove("nav-bar-active");
+    }
 });
 
 
