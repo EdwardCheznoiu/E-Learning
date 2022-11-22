@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="css/global.css">
         <link rel="stylesheet" type="text/css" href="css/nav-bar.css">
         <link rel="stylesheet" type="text/css" href="css/footer.css">
-        <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="img/favicon/favicon.png">
         <!--CSS INLCUDES-->
 
         <!--METAS-->
@@ -29,22 +29,27 @@
             <a href="#section-0"><li class = "nav-bar-item">#Home</li></a>
             <a href="#section-1"><li  class = "nav-bar-item">#Tutoriale</li></a>
             <a href="#section-2"><li  class = "nav-bar-item">#Teste</li></a>
-            <a href="#section-3"><li  class = "nav-bar-item">#Contact</li></a>
             <div class = "fa-bars">
                 <div class = "line"></div>
                 <div class = "line"></div>
                 <div class = "line"></div>
+            </div>
+            <div class = "logo-container">
+                <img id = "logo-img" src = "img/navbar/logo.png">
+                <h1>Sorting Playground</h1>
             </div>
         </ul>
         <!--NAVBAR-->
 
         <!--HEADER-->
         <div id = "head-logo-container">
-            <div id = "logo-container">
-                <h1>Sorting Playground</h1>
-                <h1>Sorting Playground</h1>
-                <h1>ALGO</h1>
-                <h1>ALGO</h1>
+            <div id = "head-logo-wrapper">
+                <div id = "wrapper-title">
+                    <h1>Bine ai venit!</h1>
+                    <p>Aici poti gasi cele mai bune cursuri interactive pentru algorimtii de sortare</p>
+                </div>
+                <a href = "#section-1"><div id = "wrapper-btn">Alege un curs</div></a>
+
             </div>
         </div>
         <!--HEADER-->
@@ -115,61 +120,11 @@
             </div>
 
             <div class = "content-box-test">
-                <div id = "content-box-test-tit">Insertion Sort</div>
+                <div id = "content-box-test-tit">Selection Sort</div>
                 <a href = "pages/testing_pages/selectionsort.html"><div class = "content-container-test-btn"><h1>START<h1></div></a>
             </div>
         </div>
         <!--MAIN CONTENT TESTS-->
-
-        <!--MAIN CONTENT CONTACT-->
-        <div class="main-content-tit" id = "section-3">Contact</div>
-        <hr>
-        <div id = "contact-container">
-            <div id = "about">
-                <h1>Programeaza o intalnire</h1>
-                <p>Programeaza o intalnire cu unul dintre consultantii nostrii si vei fi contactat cat de curand posibil</p>
-            </div>
-            <table id = "tbl">
-                <form>
-                    <tr>
-                        <td>
-                            <label for="fname">Prenume</label><br>
-                            <input type="text" id="fname" name="fname">
-                        </td> 
-                        <td>
-                            <label for="lname">Nume</label><br>
-                            <input type="text" id="lname" name="lname">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <label for="email">E-mail</label><br>
-                            <input type="text" id="email" name="email"><br>
-                        </td>
-                        <td>
-                            <label for="text">Nr. Telefon</label><br>
-                            <input type="text" id="tel" name="tel"><br>
-                        </td>
-                    </tr>
-
-                    <tr >
-                        <td colspan="2">
-                            <label for="textarea">Ceva despre tine</label><br>
-                            <textarea type="textarea" id="textarea" name="textarea"></textarea><br>
-                        </td>
-                    </tr>
-                    <tr >
-                        <td colspan="2">
-                            <div id = "submit-btn">Trimite</div>
-                        </td>
-                    </tr>
-                    
-                </form>
-            </table>            
-            </form>
-        </div>
-        <!--MAIN CONTENT CONTACT-->
     </body>
 
     <!--FOOTER-->
@@ -186,7 +141,7 @@
 
     <!--JS INLCUDES-->
     <script src="js/hover_main_container.js"></script>
-    <script src="js/nav_bar_scroll_opacity.js"></script>
+    <script src="js/nav_bar_scroll.js"></script>
     <script src="js/nav_bar_mobile.js"></script>
     <!--JS INLCUDES-->
 </html>

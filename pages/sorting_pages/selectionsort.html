@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="../../css/global.css">
         <link rel="stylesheet" type="text/css" href="../../css/nav-bar.css">
         <link rel="stylesheet" type="text/css" href="../../css/footer.css">
-        <link rel="icon" type="image/x-icon" href="../../img/favicon/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="../../img/favicon/favicon.png">
         <!--CSS INLCUDES-->
 
         <!--METAS-->
@@ -27,7 +27,15 @@
             <a href="../../index.html"><li class = "nav-bar-item">Acasa</li></a>
             <a href="../../index.html #section-1"><li  class = "nav-bar-item">Tutoriale</li></a>
             <a href="../../index.html #section-2"><li  class = "nav-bar-item">Teste</li></a>
-            <a href="../../index.html #section-3"><li  class = "nav-bar-item">Contact</li></a>
+            <div class = "fa-bars">
+                <div class = "line"></div>
+                <div class = "line"></div>
+                <div class = "line"></div>
+            </div>
+            <div class = "logo-container">
+                <img id = "logo-img" src = "../../img/navbar/logo.png">
+                <h1>Sorting Playground</h1>
+            </div>
         </ul>
         <!--NAVBAR-->
 
@@ -41,9 +49,22 @@
 
             <!--NAVBAR LEFT-->
             <ul id = "nav-bar-left">
-                <li class = "nav-bar-left-item">Descriere</li>
-                <li class = "nav-bar-left-item">Implementare</li>
-                <li class = "nav-bar-left-item">Video</li>
+                <div class = "nav-bar-left-item">
+                    <img src="../../img/sidebar_sorting_pag/desc.png" alt="Descriere">
+                    <p>Descriere</p>
+                </div>
+                <div class = "nav-bar-left-item">
+                    <img src="../../img/sidebar_sorting_pag/impl.png" alt="Implementare">
+                    <p>Implementare</p>
+                </div>
+                <div class = "nav-bar-left-item">
+                    <img src="../../img/sidebar_sorting_pag/video.png" alt="Implementare">
+                    <p>Video</p>
+                </div>
+                <div class = "nav-bar-left-item">
+                    <img src="../../img/sidebar_sorting_pag/interactiv.png" alt="Implementare">
+                    <p>Interactiv</p>
+                </div>
             </ul>
             <!--NAVBAR LEFT-->
 
@@ -75,6 +96,16 @@
                 </div>
             </div> 
             <!--VIDEO CONTENT-->
+
+             <!--INTERACTIV CONTENT-->
+             <div class = "sorting-page-content-box">
+                <div class = sorting-page-contet>
+                    <div class = "sorting-page-content-video">
+                        
+                    </div>
+                </div>
+            </div>
+            <!--INTERACTIV CONTENT-->
 
             <!--RECOMANDED CONTENT-->
             <div class = "sorting-page-content-box"> 
@@ -109,9 +140,12 @@
     </footer>
     <!--FOOTER-->
 
-    <!--JS INLCUDES-->
-    <script src="../../js/nav_bar_scroll_opacity.js"></script>
-    <script src="../../js/sorting_pages_resize_cont.js"></script>
-    <script src="../../js/sorting_pages_tabs.js"></script>
-    <!--JS INLCUDES-->
+     <!--JS INLCUDES-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="../../js/nav_bar_scroll.js"></script>
+     <script src="../../js/recomanded_gallery_bg.js"></script>
+     <script src="../../js/nav_bar_mobile.js"></script>
+     <script src="../../js/text_area_file_writter.js"></script>
+     <script src="../../js/sorting_pages_tabs.js"></script>
+     <!--JS INLCUDES-->
 </html>

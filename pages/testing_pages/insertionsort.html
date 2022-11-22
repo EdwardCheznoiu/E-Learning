@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="../../css/global.css">
         <link rel="stylesheet" type="text/css" href="../../css/nav-bar.css">
         <link rel="stylesheet" type="text/css" href="../../css/footer.css">
-        <link rel="icon" type="image/x-icon" href="../../img/favicon/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="../../img/favicon/favicon.png">
         <!--CSS INLCUDES-->
 
         <!--METAS-->
@@ -27,8 +27,15 @@
             <a href="../../index.html"><li class = "nav-bar-item">Acasa</li></a>
             <a href="../../index.html #section-1"><li  class = "nav-bar-item">Tutoriale</li></a>
             <a href="../../index.html #section-2"><li  class = "nav-bar-item">Teste</li></a>
-            <a href="../../index.html #section-3"><li  class = "nav-bar-item">Contact</li></a>
-            <div class="fa-bars"></div>
+            <div class = "fa-bars">
+                <div class = "line"></div>
+                <div class = "line"></div>
+                <div class = "line"></div>
+            </div>
+            <div class = "logo-container">
+                <img id = "logo-img" src = "../img/navbar/logo.png">
+                <h1>Sorting Playground</h1>
+            </div>
         </ul>
         <!--NAVBAR-->
 
@@ -108,7 +115,8 @@
                     <label for="question4">Raspuns 4</label>
                 </div>
             </div>
-            <div id = "submit-btn">Vezi rezultate</div>
+            <div id = "submit-btn" onclick="Result()">Vezi rezultate</div>
+            <div id = "result-content"></div>
         </div>
         <!--MAIN CONTENT-->
     </body>
@@ -126,7 +134,8 @@
     <!--FOOTER-->
 
     <!--JS INLCUDES-->
-    <script src="../../js/nav_bar_scroll_opacity.js"></script>
-    <script src="../../js/sorting_pages_resize_cont.js"></script>
+    <script src="../../js/nav_bar_scroll.js"></script>
+    <script src="../../js/nav_bar_mobile.js"></script>
+    <script src="../../js/quizz_result.js"></script>
     <!--JS INLCUDES-->
 </html>

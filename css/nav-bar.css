@@ -8,17 +8,26 @@
   z-index: 1000;
 }
 
-/* Clasa ce va fi atribuita navigatorului in momentul in care se va face click pe butonul barei de navigare*/
+/* Clasa ce va fi atribuita  in momentul in care se va face click pe butonul barei de navigare*/
 .nav-bar-active{
   width: 100%;
-  height: 100%;  
+  height: auto;  
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding-top: 25%;
+  padding-top: 70px;
+  transition: .3s;
 }
 
-.nav-bar .nav-bar-item {
+/*Clasa ce va fi atribuita in momentul in care se va face scroll - Meniul de navigare se va micsora pe inaltime cu 10 pixeli*/
+.nav-bar-scrolling{
+  height: 60px;
+}
+
+.nav-bar-item {
   display: inline-block;
   height: 60px;
   height: 100%;
@@ -32,6 +41,10 @@
   border: none; 
 }
 
+.nav-bar-item-scrolling{
+  font-size: 30px;
+}
+
 .nav-bar a{
   color: #000;
 }
@@ -40,35 +53,90 @@
   background-color: #f2f2f2;
 }
 
+.logo-container{
+  height: 100%;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  padding: 5px;
+  font-size: 22px;
+  color: #339933;
+  text-shadow: 2px 2px 2px #000;
+  transition: .5s;
+}
+
+.logo-container h1{
+  float: right
+}
+
+.logo-container img{
+  width: 50px;
+  height: 50px;
+  float: left;
+  transition: .5s;
+}
+
+.img-scrolling{
+  transform: rotate(180deg);
+  transition: .5s;
+}
+
+
+.logo-container-scrolling{
+  font-size: 20px;
+  color: #39ac39;
+  padding: 2px;
+  text-shadow: 2px 2px 2px #000;
+  
+}
+
 .fa-bars{
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   position: absolute;
   top: 0%;
-  left: 3%;
+  left: 2%;
+  transform: translate(3%, 0%);
   cursor: pointer;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
   display: none;
+  transition: .5s;
+}
+
+.fa-bars-scrolling{
+  height: 60px;
 }
 
 .line{
   width: 100%; 
-  height: 10px;
+  height: 20%;
   background-color: #000;
-  margin-top: 5px;
+  margin-top: 7px;
 }
+
 
 /* Navbar*/
  
 @media only screen and (max-width: 1200px) {
   .fa-bars{
     display: block;
-    
   }
   
   .nav-bar a {
     display: none;
+  }
+
+  #logo-container h1{
+    font-size: 20px;
+  }
+
+  .nav-bar-item{
+    border: none; 
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .logo-container{
+    font-size: 12px;
   }
 }
