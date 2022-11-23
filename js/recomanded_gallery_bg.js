@@ -1,3 +1,4 @@
+//Prin acest script se adauga culoare de background in mod 'dinamic' catre galeria de recomandari din paginile de cursuri
 let gallery = document.querySelectorAll(".recomanded-algo-gallery-cell");
 
 if((window.location.href).endsWith("bubblesort.html")){

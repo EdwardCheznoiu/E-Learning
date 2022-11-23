@@ -1,3 +1,5 @@
+//Acest script se ocupa cu gestionarea meniului in modul mobil 
+
 let fabar = document.querySelector(".fa-bars");
 let navbar = document.querySelector(".nav-bar");
 let isFabBtnClicked = false; 

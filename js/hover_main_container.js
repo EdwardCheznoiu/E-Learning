@@ -1,3 +1,4 @@
+//Acest script se ocupa de animatia butoanelor a containerelor de cursuri din pagina principala 
 function moveContentContainer(obj)
 {
     let content_container = document.querySelectorAll('.content-container-btn');

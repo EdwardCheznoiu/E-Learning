@@ -22,6 +22,17 @@
   transition: .3s;
 }
 
+.nav-bar-active a{
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  width: 100%;
+}
+
+.nav-bar-active a:hover{
+  background-color: #f2f2f2;
+}
+
 /*Clasa ce va fi atribuita in momentul in care se va face scroll - Meniul de navigare se va micsora pe inaltime cu 10 pixeli*/
 .nav-bar-scrolling{
   height: 60px;
@@ -109,13 +120,14 @@
 .line{
   width: 100%; 
   height: 20%;
-  background-color: #000;
+  background-color: #1a1a1a;
   margin-top: 7px;
 }
 
 
 /* Navbar*/
  
+/*Restilizare a componetelor care sunt vazute de pe un ecran mai mic sau egal cu 1200px*/
 @media only screen and (max-width: 1200px) {
   .fa-bars{
     display: block;
@@ -134,9 +146,13 @@
     font-size: 15px;
   }
 }
+/*Restilizare a componetelor care sunt vazute de pe un ecran mai mic sau egal cu 1200px*/
 
+/*Restilizare a componetelor care sunt vazute de pe un ecran mai mic sau egal cu 550px*/
 @media only screen and (max-width: 550px) {
-  .logo-container{
-    font-size: 12px;
+  .logo-container h1{
+    font-size: 18px;
+    padding: 15px;
   }
 }
+/*Restilizare a componetelor care sunt vazute de pe un ecran mai mic sau egal cu 550px*/

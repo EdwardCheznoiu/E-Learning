@@ -1,4 +1,4 @@
-/* Zona de continut pentru tutoriale */
+/* Zona de continut pentru Cursuri */
 #content-container-tut{
 	display: grid; 
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -99,7 +99,7 @@ a .content-container-btn{
     letter-spacing: 5px;
     text-shadow: 2px 2px 4px #000;
 }
-/* Zona de continut pentru tutoriale */
+/* Zona de continut pentru Cursuri */
 
 /* Zona de continut pentru teste */
 #content-container-test{
@@ -180,17 +180,13 @@ a .content-container-btn{
 }
 /* Zona de continut pentru teste */
 
-/* Titluri zona de continut - Tutoriale*/
+/* Titluri zona de continut - Cursuri, Teste*/
 #section-1{
-    background-color: #03a9f4;
+    opacity: .5;
 }
 
 #section-2{
     background-color: #ff704d;
 }
-
-#section-3{
-    background-color: #39ac73;
-}
-/* Titluri zona de continut - Tutoriale, Teste */
+/* Titluri zona de continut - Cursuri, Teste */
 
