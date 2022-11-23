@@ -1,5 +1,6 @@
 /* Sorting pages*/
 
+/*Logo / Titlul paginilor de cursuri*/
 #sorting-page-logo{
     width: 80%;
     font-size: 6vw;
@@ -9,12 +10,16 @@
     margin: 70px auto; 
     text-align: center;
 }
+/*Logo / Titlul paginilor de cursuri*/
 
+/*Intreaga zona de continut*/
 #main-content{
     width: 100%; 
     height: auto;
 }
+/*Intreaga zona de continut*/
 
+/*Meniu de navigare lateral*/
 #nav-bar-left{
     width: 15%; 
     overflow: hidden;
@@ -40,6 +45,7 @@
     width: 45px;
     height: 100%;
 }
+/*Meniu de navigare lateral*/
  
 
 .sorting-page-content-box{
@@ -128,8 +134,7 @@ a .recomanded-algo-gallery-cell{
 
 /* Sorting pages*/
 
-/* Schimbam modul de vizualizare in functie de dimensiunea ecranului */ 
-
+/*Restilizare a componetelor care sunt vazute de pe un ecran mai mic sau egal cu 1200px*/
 @media only screen and (max-width: 1200px) {
 
     #sorting-page-logo{
@@ -152,7 +157,8 @@ a .recomanded-algo-gallery-cell{
         background-color: #fff;
         margin: 0;
         height: 100%;
-        margin-right: 55px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .sorting-page-content-box{
@@ -167,16 +173,29 @@ a .recomanded-algo-gallery-cell{
         width: 100%;
     }
  }
+ /*Restilizare a componetelor care sunt vazute de pe un ecran mai mic sau egal cu 1200px*/
 
+/*Restilizare a componetelor care sunt vazute de pe un ecran mai mic sau egal cu 800px*/
  @media only screen and (max-width: 800px) {
 
     #sorting-page-logo{
         width: 100%;
-        font-size: 48px;
+        font-size: 4em;
     }
 
     .recomanded-algo-gallery{
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
  }
+/*Restilizare a componetelor care sunt vazute de pe un ecran mai mic sau egal cu 800px*/
+
+/*Restilizare a componetelor care sunt vazute de pe un ecran mai mic sau egal cu 400px*/
+ @media only screen and (max-width: 400px) {
+    #nav-bar-left .nav-bar-left-item{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+   
+}
+/*Restilizare a componetelor care sunt vazute de pe un ecran mai mic sau egal cu 400px*/
   

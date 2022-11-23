@@ -1,3 +1,5 @@
+//Acest script se ocupa cu animatia meniului de navigare si a tuturor componentelor pe care le cuprinde
+
 document.addEventListener('scroll', (e) => {
     let navbar = document.querySelector(".nav-bar");
     let navbarChildren = document.querySelectorAll(".nav-bar-item");

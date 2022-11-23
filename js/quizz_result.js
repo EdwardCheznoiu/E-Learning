@@ -1,3 +1,5 @@
+//Acest script gestioneaza paginile de quiz in momentul in care se apasa pe butonul 'Vezi rezultate' 
+
 let answers = document.querySelectorAll(".answers");
 let quiz_box = document.querySelectorAll(".quizz-box");
 let result_content = document.querySelector("#result-content");

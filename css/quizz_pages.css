@@ -63,9 +63,24 @@
     height: 60px;
     border: 1px solid #000;
 }
+
+#recomanded-algo{
+    width: 100%; 
+    height: auto;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: auto;
+    margin-top: 20px;
+    display: none;
+}
+
+.recomanded-algo-cell{
+    height: 200px; 
+    border: 1px solid red; 
+}
 /* Quiz page */
 
-/* Schimbam modul de vizualizare in functie de dimensiunea ecranului */ 
+/*Restilizare a componetelor care sunt vazute de pe un ecran mai mic sau egal cu 1250px*/
 @media only screen and (max-width: 1250px) {
     #quizz-content{
         width: 70%; 
@@ -78,3 +93,4 @@
     }  
 
  }
+ /*Restilizare a componetelor care sunt vazute de pe un ecran mai mic sau egal cu 1250px*/

@@ -21,7 +21,7 @@
   position: relative;
 }
 
-
+/* Titlul de bun venit din pagina principala cu componentele sale*/
 #wrapper-title{
   width: 100%;
   height: 40vh; 
@@ -57,14 +57,13 @@
   transform: translate(-50%, -60%);
   cursor: pointer; 
   padding: 3px;
-  
 }
 
 #wrapper-btn:hover{
   background-color: rgba(255, 255, 255, .2);
   transition: .3s;
 }
-
+/* Titlul de bun venit din pagina principala cu componentele sale*/
 
 
 
