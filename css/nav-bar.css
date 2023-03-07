@@ -6,6 +6,9 @@
   top: 0;  
   position: fixed;
   z-index: 1000;
+  border-bottom: 4px solid #ff704d;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 /* Clasa ce va fi atribuita  in momentul in care se va face click pe butonul barei de navigare*/
@@ -22,6 +25,16 @@
   transition: .3s;
 }
 
+/*Clasa ce va fi atribuita in momentul in care se va face scroll - Meniul de navigare se va micsora pe inaltime cu 10 pixeli*/
+.nav-bar-scrolling{
+  height: 60px;
+}
+
+.nav-bar a {
+  color: #000;
+  
+}
+
 .nav-bar-active a{
   color: #000;
   text-decoration: none;
@@ -30,22 +43,27 @@
 }
 
 .nav-bar-active a:hover{
-  background-color: #f2f2f2;
-}
-
-/*Clasa ce va fi atribuita in momentul in care se va face scroll - Meniul de navigare se va micsora pe inaltime cu 10 pixeli*/
-.nav-bar-scrolling{
-  height: 60px;
+  background-color: #e6e6e6;
+  border-bottom-left-radius: 15px;
 }
 
 .nav-bar-item {
   display: inline-block;
-  height: 60px;
-  height: 100%;
   padding: 10px;
-  text-align: center;
+  height: 100%;
   font-size: 40px;
+  text-align: center;
   border-left: 1px solid #000;
+  background-color: #fff;
+}
+
+a:first-child .nav-bar-item{
+  border-bottom-left-radius: 15px;
+}
+
+.nav-bar-item:hover{
+  background-color: #39ac39;
+  color: #fff
 }
 
 .nav-bar-item-active{
@@ -56,28 +74,20 @@
   font-size: 30px;
 }
 
-.nav-bar a{
-  color: #000;
-}
-
-.nav-bar li:hover{
-  background-color: #f2f2f2;
-}
-
 .logo-container{
   height: 100%;
   position: absolute;
   right: 2%;
   top: 2%;
   padding: 5px;
-  font-size: 22px;
+  font-size: 17px;
   color: #339933;
-  text-shadow: 2px 2px 2px #000;
   transition: .5s;
 }
 
 .logo-container h1{
-  float: right
+  float: right;
+  font-family: DelaGothicOne;
 }
 
 .logo-container img{
@@ -92,13 +102,10 @@
   transition: .5s;
 }
 
-
 .logo-container-scrolling{
-  font-size: 20px;
+  font-size: 15px;
   color: #39ac39;
   padding: 2px;
-  text-shadow: 2px 2px 2px #000;
-  
 }
 
 .fa-bars{
@@ -123,8 +130,6 @@
   background-color: #1a1a1a;
   margin-top: 7px;
 }
-
-
 /* Navbar*/
  
 /*Restilizare a componetelor care sunt vazute de pe un ecran mai mic sau egal cu 1200px*/

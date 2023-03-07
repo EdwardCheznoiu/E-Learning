@@ -52,10 +52,11 @@
 }
 
 .content-box #content-box-tit{
-    font-size: 5vh;
+    font-size: 3.5vh;
     color: #fff;
     text-shadow: 2px 2px 4px #1a1a1a;
     font-weight: bold;
+    font-family: DelaGothicOne;
 }
 
 .content-box-fig-desc{
@@ -80,24 +81,26 @@ a .content-container-btn{
 }
 
 .content-container-btn{
-    width: 250px; 
+    width: 220px; 
     height: 50px; 
     border: 2px solid #fff;
     background-color: transparent;
     position: absolute;
+    left: 5%;
     bottom: 15%;
-    transform: translate(-100%);
+    transition: .5s;
 }
 
 .content-container-btn:hover{
     box-shadow: 5px 5px 27px 14px rgba(255,255,255,0.26);
+    left: 7%;
     cursor: pointer; 
 }
 
 .content-container-btn h1{
-    text-transform: uppercase;
-    letter-spacing: 5px;
     text-shadow: 2px 2px 4px #000;
+    font-family: DelaGothicOne;
+    font-size: 1.5em;
 }
 /* Zona de continut pentru Cursuri */
 
@@ -107,39 +110,63 @@ a .content-container-btn{
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     min-height: 20vh;
 	margin: auto;
-    padding: 25px;
+    
 }
 
 .content-box-test{
-    margin-top: 20px;
+    margin: 20px;
+    height: 200px;
     text-align: center;
+    background-color: #fff;
+    border-radius: 25px;
+    position: relative;
 }
 
 .content-box-test:first-child{
     border-left: 5px solid #03a9f4;
+    border-right: 5px solid #03a9f4; ;
+    box-shadow: -5px 1px 11px 0px rgba(3,169,244,0.47);
+    -webkit-box-shadow: -5px 1px 11px 0px rgba(3,169,244,0.47);
+    -moz-box-shadow: -5px 1px 11px 0px rgba(3,169,244,0.47);
 }
 
 .content-box-test:nth-child(2){
     border-left: 5px solid #ff704d;
+    border-right: 5px solid #ff704d;
+    box-shadow: -5px 1px 11px 0px rgba(255,112,77,0.47);
+    -webkit-box-shadow: -5px 1px 11px 0px rgba(255,112,77,0.47);
+    -moz-box-shadow: -5px 1px 11px 0px rgba(255,112,77,0.47);
 }
 
 .content-box-test:nth-child(3){
     border-left: 5px solid #39ac73;
+    border-right: 5px solid #39ac73;
+    box-shadow: -5px 1px 11px 0px rgba(57,172,115,0.47);
+    -webkit-box-shadow: -5px 1px 11px 0px rgba(57,172,115,0.47);
+    -moz-box-shadow: -5px 1px 11px 0px rgba(57,172,115,0.47);
 }
 
 .content-box-test:nth-child(4){
     border-left: 5px solid #666699;
+    border-right: 5px solid #666699;
+    box-shadow: -5px 1px 11px 0px rgba(102,102,153,0.47);
+    -webkit-box-shadow: -5px 1px 11px 0px rgba(102,102,153,0.47);
+    -moz-box-shadow: -5px 1px 11px 0px rgba(102,102,153,0.47);
 }
 
 #content-container-test a{
     text-decoration: none;
     color: #020202;
+    width: 150px;
 }
 
 .content-container-test-btn{
-    border: 1px solid #1a1a1a;
-    width: 150px;
+    border-top: 1px solid #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+    width: 100%;
     margin: 25px auto;
+    position: absolute;
+    bottom: 5%;
 }
 
 .content-box-test:first-child .content-container-test-btn:hover{
@@ -163,9 +190,10 @@ a .content-container-btn{
 }
 
 #content-box-test-tit{
-    font-size: 3vh; 
+    font-size: 2em; 
     color: #020202;
     font-weight: bold;
+    font-family: DelaGothicOne;
 }
 
 .main-content-tit{
@@ -175,18 +203,89 @@ a .content-container-btn{
     width: 200px;
     font-size: 4vh;
     text-align: center;
-    margin: 10px 10px 10px 10px;
-
+    margin: 10px 0px 10px 0px;
 }
 /* Zona de continut pentru teste */
 
-/* Titluri zona de continut - Cursuri, Teste*/
+
+/* Zona de continut pentru jocuri */
+#content-container-games{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.content-box-games{
+    width: 300px;
+    margin: auto 50px;
+    height: 500px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow:  2px 2px 18px #9b9b9b;
+}
+
+.content-box-games img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+#content-box-games-tit{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 5%;
+    color: #fff;
+    font-family: DelaGothicOne;
+    text-shadow: 2px 2px 4px #000;
+}
+
+
+#content-box-games-play{
+    height: 50px;
+    width: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 350px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+    font-family: DelaGothicOne;
+    text-shadow: 2px 2px 4px #000;
+    transition: .5s;
+}
+
+#content-box-games-play:hover{
+    width: 100%;
+    box-shadow: -5px 1px 11px 0px rgba(255,255,255,0.47);
+}
+/* Zona de continut pentru jocuri */
+
+
+/* Titluri zona de continut - Cursuri, Teste, Jocuri*/
 #section-1{
-    opacity: .5;
+    background-color: #03a9f4;
+    
 }
 
 #section-2{
     background-color: #ff704d;
 }
-/* Titluri zona de continut - Cursuri, Teste */
 
+#section-3{
+    background-color: #39ac73;
+}
+/* Titluri zona de continut - Cursuri, Teste, Jocuri */
+
+@media only screen and (max-width: 1200px) {
+    #content-container-test{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}

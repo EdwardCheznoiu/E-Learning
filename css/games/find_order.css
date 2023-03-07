@@ -1,0 +1,164 @@
+.game-scene{
+    margin: 100px auto;
+    width: 90%;
+    height: 100vh;
+    height: auto;
+    position: relative;
+}
+
+.cards-scene{
+    background-color: #fff;
+    border-radius: 15px;
+    width: 70%; 
+    box-shadow: 2px 4px 12px #000;
+    margin: auto;
+    display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 25px;
+}
+
+.card{
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    margin: auto;
+}
+
+.card-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: linear-gradient(90deg, rgba(37,94,112,1) 0%, rgba(162,42,72,1) 28%, rgba(27,152,61,1) 100%);
+    color: #fff;
+    box-shadow: 4px 4px 4px #000;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-face img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card-face:hover h1{
+    color: #39ac73;
+}
+
+.card-face h1{
+    font-size: 12vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+
+
+.card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #39ac73;
+    color: #fff;
+    box-shadow: 4px 4px 4px #000;
+    border-radius: 15px;
+    transform: rotateY(180deg);
+}
+
+.card-number{
+    position: absolute;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0, .5);
+}
+
+.card-number h1{
+    color: #fff;
+    font-size: 7em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+ 
+}
+
+#game-title{
+    font-size: 2em; 
+    font-family: DelaGothicOne;
+    text-align: center;
+}
+
+#game-score{
+    font-size: 20px; 
+    font-family: DelaGothicOne;
+    text-align: center;
+}
+
+#game-moves{
+    font-size: 20px; 
+    font-family: DelaGothicOne;
+    text-align: center;
+}
+
+#game-result{
+    width: 70%; 
+    background-color: #fff;
+    box-shadow: 2px 4px 12px #000;
+    border-radius: 15px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+#btn-failed{
+    width: 330px;
+    height: 40px;
+    margin: 20px auto;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 3px;
+    display: none;
+}
+
+#btn-failed h2{
+    font-size: 30px;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .cards-scene{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .card{
+        width: 150px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .card{
+        width: 120px;
+        height: 170px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .card{
+        width: 70px;
+        height: 120px;
+    }
+}
