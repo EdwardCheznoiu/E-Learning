@@ -2,7 +2,7 @@
 <html>
     <head>
         <!--TITLE-->
-        <title>E-Learning | Pagina principala - Tutoriale, Teste, Contact</title>
+        <title>Sorting Playground | Pagina principala - Tutoriale, Teste, Contact</title>
         <!--TITLE-->
         
         <!--CSS INLCUDES-->
@@ -16,7 +16,7 @@
 
         <!--METAS-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="E-learning platform for sorting algorithms">
+        <meta name="description" content="Sorting Playground platform for sorting algorithms">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <!--METAS-->
     </head>
@@ -25,9 +25,10 @@
         <!--NAVBAR-->
         <div id = "section-0"></div>
         <ul class = "nav-bar">
-            <a href="#section-0"><li class = "nav-bar-item">#Home</li></a>
-            <a href="#section-1"><li  class = "nav-bar-item">#Cursuri</li></a>
-            <a href="#section-2"><li  class = "nav-bar-item">#Teste</li></a>
+            <a href="#section-0"><li class = "nav-bar-item">Acasa</li></a>
+            <a href="#section-1"><li  class = "nav-bar-item">Cursuri</li></a>
+            <a href="#section-2"><li  class = "nav-bar-item">Teste</li></a>
+            <a href="#section-3"><li  class = "nav-bar-item">Jocuri</li></a>
             <div class = "fa-bars">
                 <div class = "line"></div>
                 <div class = "line"></div>
@@ -57,43 +58,43 @@
         <div class="main-content-tit" id = "section-1">Cursuri</div>
         <hr>
         <div id = "content-container-tut">
-            <div class = "content-box"  onmouseover = "moveContentContainer(this)">
+            <div class = "content-box">
                 <div class = "content-box-fig">
                     <div id = "content-box-tit">Bubble Sort</div>
                     <div class = "content-box-fig-desc">
                         Bubblesort este cel mai simplu algoritm de sortare care functioneaza schimband in mod repetat elementele adiacente daca acestea sunt in ordinea gresita. 
                     </div>
-                    <a href = "pages/sorting_pages/bubblesort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
+                    <a href = "pages/sorting_pages/bubblesort.html"><div class = "content-container-btn"><h1>Invata<h1></div></a>
                 </div>
             </div>
 
-            <div class = "content-box" onmouseover = "moveContentContainer(this)">
+            <div class = "content-box">
                 <div class = "content-box-fig">
                     <div id = "content-box-tit">Quick Sort</div>
                     <div class = "content-box-fig-desc">
                         QuickSort sau Sortarea rapida este o metoda eficienta de sortare a unui tablou, descoperita in 1960 de programatorul britanic C.A.R. Hoare
                     </div>
-                    <a href = "pages/sorting_pages/quicksort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
+                    <a href = "pages/sorting_pages/quicksort.html"><div class = "content-container-btn"><h1>Invata<h1></div></a>
                 </div>
             </div>
 
-            <div class = "content-box" onmouseover = "moveContentContainer(this)">
+            <div class = "content-box">
                 <div class = "content-box-fig">
                     <div id = "content-box-tit">Insertion Sort</div>
                     <div class = "content-box-fig-desc">
                         Insertionsort este un algoritm simplu de sortare care functioneaza similar modului in care sortati cartile de joc in mainile dvs. 
                     </div>
-                    <a href = "pages/sorting_pages/insertionsort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
+                    <a href = "pages/sorting_pages/insertionsort.html"><div class = "content-container-btn"><h1>Invata<h1></div></a>
                 </div>
             </div>
 
-            <div class = "content-box" onmouseover = "moveContentContainer(this)">
+            <div class = "content-box">
                 <div class = "content-box-fig">
                     <div id = "content-box-tit">Selection Sort</div>
                     <div class = "content-box-fig-desc">
                         Selectionsort sorteaza o matrice gasind in mod repetat elementul minim (luand in considerare ordinea crescatoare) din partea nesortata si punandu-l la inceput.
                     </div>
-                    <a href = "pages/sorting_pages/selectionsort.html"><div class = "content-container-btn"><h1>INVATA<h1></div></a>
+                    <a href = "pages/sorting_pages/selectionsort.html"><div class = "content-container-btn"><h1>Invata<h1></div></a>
                 </div>
             </div>      
         </div>
@@ -124,6 +125,31 @@
             </div>
         </div>
         <!--MAIN CONTENT TESTS-->
+
+        <!--MAIN CONTENT GAMES-->
+        <div class="main-content-tit" id = "section-3">Jocuri</div>
+        <hr>
+        <div id = "content-container-games">
+            <div class = "content-box-games">
+                <div id = "content-box-games-tit">Find and Sort</div>
+                <a href="pages/games/find_order.html"><div id = "content-box-games-play">Joaca</div></a>
+                <img src = "img/games/find_match/cover.jpg">
+            </div>
+            <div class = "content-box-games">
+                <div id = "content-box-games-tit">Sort Box</div>
+                <a href="pages/games/sortbox.html"><div id = "content-box-games-play">Joaca</div></a>
+                <img src = "img/games/sortbox/cover.jpg">
+            </div> 
+
+            <div class = "content-box-games">
+                <div id = "content-box-games-tit">Hangman</div>
+                <a href=""><div id = "content-box-games-play">Joaca</div></a>
+                <img src = "img/games/hangman/cover.png">
+            </div> 
+            
+        </div>
+        <!--MAIN CONTENT GAMES-->
+
     </body>
 
     <!--FOOTER-->
@@ -139,8 +165,8 @@
     <!--FOOTER-->
 
     <!--JS INLCUDES-->
-    <script src="js/hover_main_container.js"></script>
-    <script src="js/nav_bar_scroll.js"></script>
-    <script src="js/nav_bar_mobile.js"></script>
+    <script src="js/navbar/nav_bar_selected_item.js"></script>
+    <script src="js/navbar/nav_bar_scroll.js"></script>
+    <script src="js/navbar/nav_bar_mobile.js"></script>
     <!--JS INLCUDES-->
 </html>

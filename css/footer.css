@@ -8,6 +8,7 @@
     min-width: 40%;
     display: flex;
     justify-content: center;
+    background-attachment: fixed;
 }
 
 #social-btns img{

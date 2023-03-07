@@ -11,21 +11,23 @@
 
         <!--METAS-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="E-learning platform for sorting algorithms">
+        <meta name="description" content="Sorting Playground platform for sorting algorithms">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <!--METAS-->
 
         <!--TITLE-->
-        <title>E-Learning | Insertionsort - Descriere, Implementare, Video</title>
+        <title>Sorting Playground | Insertionsort - Descriere, Implementare, Video</title>
         <!--TITLE-->
     </head>
     
     <body>
         <!--NAVBAR-->
+        <div id = "section-0"></div>
         <ul class = "nav-bar">
-            <a href="../../index.html"><li class = "nav-bar-item">#Home</li></a>
-            <a href="../../index.html #section-1"><li  class = "nav-bar-item">#Cursuri</li></a>
-            <a href="../../index.html #section-2"><li  class = "nav-bar-item">#Teste</li></a>
+            <a href="../../index.html"><li class = "nav-bar-item">Acasa</li></a>
+            <a href="../../index.html#section-1"><li  class = "nav-bar-item">Cursuri</li></a>
+            <a href="../../index.html#section-2"><li  class = "nav-bar-item">Teste</li></a>
+            <a href="../../index.html#section-3"><li  class = "nav-bar-item">Jocuri</li></a>
             <div class = "fa-bars">
                 <div class = "line"></div>
                 <div class = "line"></div>
@@ -39,60 +41,99 @@
         <!--NAVBAR-->
 
         <!--TITLE PAGE-->
-        <div id = "sorting-page-logo" style = "color: #39ac73;">INSERTION SORT</div>
+        <div id = "sorting-page-logo" style = "color: #39ac73;;">Insertion Sort</div>
         <!--TITLE PAGE-->
 
 
         <!--MAIN CONTENT-->
         <div id = "main-content">
 
-             <!--NAVBAR LEFT-->
-             <ul id = "nav-bar-left">
-                <div class = "nav-bar-left-item">
-                    <img src="../../img/sidebar_sorting_pag/desc.png" alt="Descriere">
-                    <p>Descriere</p>
+            <!--NAVBAR LEFT-->
+            <ul id = "nav-bar-left">
+                <div class="hide-nav-bar-left">
+                    <img class = "hide-nav-bar-left-img" src="../../img/navbar/hide.png">
                 </div>
-                <div class = "nav-bar-left-item">
-                    <img src="../../img/sidebar_sorting_pag/impl.png" alt="Implementare">
-                    <p>Implementare</p>
-                </div>
-                <div class = "nav-bar-left-item">
-                    <img src="../../img/sidebar_sorting_pag/video.png" alt="Implementare">
-                    <p>Video</p>
-                </div>
-                <div class = "nav-bar-left-item">
-                    <img src="../../img/sidebar_sorting_pag/appl.png" alt="Aplicatii">
-                    <p>Aplicatii</p>
-                </div>
-                <div class = "nav-bar-left-item">
-                    <img src="../../img/sidebar_sorting_pag/interactiv.png" alt="Implementare">
-                    <p>Interactiv</p>
-                </div>
+                    <div class = "nav-bar-left-item">
+                        <img src="../../img/sidebar_sorting_pag/desc.png" alt="Descriere">
+                        <p>Descriere</p>
+                    </div>
+                    <div class = "nav-bar-left-item">
+                        <img src="../../img/sidebar_sorting_pag/impl.png" alt="Implementare">
+                        <p>Implementare</p>
+                    </div>
+                    <div class = "nav-bar-left-item">
+                        <img src="../../img/sidebar_sorting_pag/video.png" alt="Video">
+                        <p>Video</p>
+                    </div>
+                    <div class = "nav-bar-left-item">
+                        <img src="../../img/sidebar_sorting_pag/appl.png" alt="Aplicatii">
+                        <p>Aplicatii</p>
+                    </div>
+                    <div class = "nav-bar-left-item">
+                        <img src="../../img/sidebar_sorting_pag/interactiv.png" alt="Interactiv">
+                        <p>Interactiv</p>
+                    </div>
             </ul>
             <!--NAVBAR LEFT-->
 
             <!--DESC CONTENT-->
-            <div  class = "sorting-page-content-box"  id = "description">
+            <div  class = "sorting-page-content-box">
                 <div class = sorting-page-contet>
+                    <div class = "sorting-page-contet-desc">
+                        <h2>Cunoscuta sub numele InsertionSort sau Sortarea prin Insertie, aceasta metoda de sortare se bazeaza pe urmatoarea idee:</h2>
+                        <br>
+                        <li>fie un vector X[] cu n elemente</li> 
+                        <li>daca secventa cu indici 0, 1, ... , i-1 este ordonata, atunci putem insera elementul X[i] in aceasta secventa astfel incat sa fie ordonata secventa cu indici 0, 1, ... , i-1, i</li>
+                        <li>luam pe rand fiecare element X[i] si il inseram in secventa din stanga sa</li>
+                        <li>la final intreg vectorul va fi ordonat</li>
+                        <br>
+                        <h2>O reprezentare a algoritmului este:</h2>
+                        <br>
+                        <li>parcurgem vectorul cu indicele i</li>
+                        <li>inseram pe X[i] in secventa din stanga sa; pentru inserare se muta unele elemente din secventa spre dreapta</li>
+                        <br>
+                        <h2>Complexitate</h2>
+                        <br>
+                        <li>Cel mai bun caz: O(n)</li>
+                        <li>Cel mai rau caz: O(n^2)</li>
+                    </div>
                 </div>
             </div>
             <!--DESC CONTENT-->
 
             <!--IMPL CONTENT-->
-            <div class = "sorting-page-content-box"  id = "implementation">
+            <div  class = "sorting-page-content-box">
                 <div class = sorting-page-contet>
-                    
+                    <div class = "sorting-page-contet-desc">
+                        <div class = "sorting-page-contet-impl">
+                            <h2>Exemplu: Sa ordonam urmatorul vector, in care n=5:</h2><br>
+                            <img src="../../img/sorting_pages_info/bubblesort/1.png" alt=""><br><br>
+                            
+                            <div class = "imgs-cont">
+                                <div class = "imgs-cont-box">
+                                    <p>Sortarea prin insertie presupune urmatoarele transformari ale vectorului:</p><br>
+                                    <img src="../../img/sorting_pages_info/insertionsort/1.png" alt=""><br><br>
+                                </div>
+                                <div class = "imgs-cont-box">
+                                     
+                                </div>
+                            </div><br>
+                            <h2>O secventa de cod in C++ ar fi urmatoarea</h2><br>
+                            
+                            <textarea name="textareacode" id = "textareacode" readonly></textarea>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--DESC IMPL-->
+            <!--IMPL CONTENT-->
 
             <!--VIDEO CONTENT-->
-            <div class = "sorting-page-content-box"  id = "video">
+            <div class = "sorting-page-content-box">
                 <div class = sorting-page-contet>
                     <div class = "sorting-page-content-video">
                         <video  controls>
-                            <source src="movie.mp4" type="video/mp4">
-                            <source src="movie.ogg" type="video/ogg">
+                            <source src="../../video/insertionsort.mp4" type="video/mp4">
+                            <source src="../../video/insertionsort.ogg" type="video/ogg">
                         Your browser does not support the video tag.
                         </video>
                     </div>
@@ -100,16 +141,48 @@
             </div>
             <!--VIDEO CONTENT-->
 
-             <!--INTERACTIV CONTENT-->
+             <!--APPL CONTENT-->
              <div class = "sorting-page-content-box">
                 <div class = sorting-page-contet>
-                    <div class = "sorting-page-content-video">
-                        
+                    <div class = "sorting-page-contet-desc">
+                        <h3>Exercitiul 1</h3><br>
+                        <h5>Se da urmatorul vector cu elemente neordonate v [] = {4, 3, 2, 5, 8, 1}. Se cere sa se ordoneze crescator toate elementele vectorului.</h5>
+                        <textarea name="textareaalgo" class = "textarea-algo" readonly></textarea>
+                    </div>
+
+                    <div class = "sorting-page-contet-desc">
+                        <h3>Exercitiul 2</h3><br>
+                        <h5>Se da urmatorul vector cu elemente neordonate v [] = {4, 3, 2, 5, 8, 1}. Se cere sa se ordoneze crescator toate elementele vectorului care sunt pare.</h5>
+                        <textarea name="textareaalgo" class = "textarea-algo" readonly></textarea>
+                    </div>
+
+                  
+                    <div class = "sorting-page-contet-desc">
+                        <h3>Exercitiul 3</h3><br>
+                        <h5>Se da urmatorul vector cu elemente neordonate v [] = {4, 3, 2, 5, 8, 1}. Se cere sa se ordoneze crescator toate elementele vectorului care sunt impare.</h5>
+                        <textarea name="textareaalgo" class = "textarea-algo" readonly></textarea>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--APPL CONTENT-->
+
+            <!--INTERACTIV CONTENT-->
+            <div class = "sorting-page-content-box">
+                <div class = sorting-page-contet>
+                    <div class = "sorting-page-contet-desc">
+                        <p class = "array-tit">Introduceti elementele vectorului folosind doar numere separate prin virgula, fara spatiu</p>
+                        <div class = "input-array">
+                            <input name="array" id = "array">
+                        </div>
+                        <div id="array-sort-btn" onclick="sortArray()">Sorteaza</div>
+                        <div id="array-result"></div>
                     </div>
                 </div>
             </div>
             <!--INTERACTIV CONTENT-->
-            
+
             <!--RECOMANDED CONTENT-->
             <div class = "sorting-page-content-box"> 
                 <div id= "recomanded-algo">
@@ -138,13 +211,17 @@
     </footer>
     <!--FOOTER-->
 
-     <!--JS INLCUDES-->
-     <script src="../../js/jquery-3.6.1.min.js"></script>
-     <script src="../../js/nav_bar_scroll.js"></script>
-     <script src="../../js/recomanded_gallery_bg.js"></script>
-     <script src="../../js/nav_bar_mobile.js"></script>
-     <script src="../../js/text_area_file_writter.js"></script>
-     <script src="../../js/sorting_pages_tabs.js"></script>
-     <!--JS INLCUDES-->
+    <!--JS INLCUDES-->
+    <script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/navbar/nav_bar_scroll.js"></script>
+    <script src="../../js/sorting_pages/recomanded_gallery_bg.js"></script>
+    <script src="../../js/navbar/nav_bar_mobile.js"></script>
+    <script src="../../js/sorting_pages/text_area_file_writter.js"></script>
+    <script src="../../js/sorting_pages/txtarea_problems_writter.js"></script>
+    <script src="../../js/sorting_pages/sorting_pages_tabs.js"></script>
+    <script src="../../js/navbar/nav_bar_selected_item.js"></script>
+    <script src="../../js/algo/insertionsort.js"></script>
+    <script src="../../js/sorting_pages/hide-left-navbar.js"></script>
+    <!--JS INLCUDES-->
 
 </html>

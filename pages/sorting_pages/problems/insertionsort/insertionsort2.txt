@@ -1,0 +1,9 @@
+int n, X[100];
+for(int i = 1 ; i < n ; i ++)
+{
+    int x = a[i];
+    int p = i - 1;
+    while(p >= 0 && a[p] < x)
+        a[p + 1] = a[p], p --;
+    a[p + 1] = x;
+}

@@ -11,28 +11,29 @@
 
         <!--METAS-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="E-learning platform for sorting algorithms">
+        <meta name="description" content="Sorting Playground platform for sorting algorithms">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <!--METAS-->
 
         <!--TITLE-->
-        <title>E-Learning | Bubblesort Quizz - Testeaza-ti cunostintele</title>
+        <title>Sorting Playground | Bubblesort Quizz - Testeaza-ti cunostintele</title>
         <!--TITLE-->
     </head>
     
     <body>
         <!--NAVBAR-->
         <ul class = "nav-bar">
-            <a href="../../index.html"><li class = "nav-bar-item">#Home</li></a>
-            <a href="../../index.html #section-1"><li  class = "nav-bar-item">#Cursuri</li></a>
-            <a href="../../index.html #section-2"><li  class = "nav-bar-item">#Teste</li></a>
+            <a href="../../index.html"><li class = "nav-bar-item">Acasa</li></a>
+            <a href="../../index.html #section-1"><li  class = "nav-bar-item">Cursuri</li></a>
+            <a href="../../index.html #section-2"><li  class = "nav-bar-item">Teste</li></a>
+            <a href="../../index.html#section-3"><li  class = "nav-bar-item">Jocuri</li></a>
             <div class = "fa-bars">
                 <div class = "line"></div>
                 <div class = "line"></div>
                 <div class = "line"></div>
             </div>
             <div class = "logo-container">
-                <img id = "logo-img" src = "../img/navbar/logo.png">
+                <img id = "logo-img" src = "../../img/navbar/logo.png">
                 <h1>Sorting Playground</h1>
             </div>
         </ul>
@@ -47,6 +48,7 @@
         <div id = "quizz-content">
             <div class = "quizz-box">
                 <div class = "quizz-box-question">Ce complexitate are algoritmul Bubblesort in cel mai rau caz?</div>
+                <div class = "quizz-box-points">20p</div>
                 <div class = "answers">
                     <input type="radio" id="question1" name="question1" value="0">
                     <label for="question1">O(n)</label><br>
@@ -60,58 +62,62 @@
             </div>
 
             <div class = "quizz-box">
-                <div class = "quizz-box-question">Ce lipseste din urmatoarea secventa de cod?</div>
+                <div class = "quizz-box-question">Ce complexitate are algoritmul Bubblesort in cel mai bun caz?</div>
+                <div class = "quizz-box-points">20p</div>
                 <div class = "answers">
                     <input type="radio" id="question1" name="question2" value="1">
-                    <label for="question1">Raspuns 1</label><br>
+                    <label for="question1">O(n)</label><br>
                     <input type="radio" id="question2" name="question2" value="0">
-                    <label for="question2">Raspuns 2</label><br>
+                    <label for="question2">O(n / 2)</label><br>
                     <input type="radio" id="question3" name="question2" value="0">
-                    <label for="question3">Raspuns 3</label><br>
+                    <label for="question3">O(log(n))</label><br>
                     <input type="radio" id="question4" name="question2" value="0">
-                    <label for="question4">Raspuns 4</label>
+                    <label for="question4">O(n^2)</label>
                 </div>
             </div>
 
             <div class = "quizz-box">
-                <div class = "quizz-box-question">Intrebare</div>
+                <div class = "quizz-box-question">Cand stim daca vectorul este sortat folosind algoritmul Bubblesort?</div>
+                <div class = "quizz-box-points">20p</div>
                 <div class = "answers">
-                    <input type="radio" id="question1" name="question3" value="1">
-                    <label for="question1">Raspuns 1</label><br>
-                    <input type="radio" id="question2" name="question3" value="0">
-                    <label for="question2">Raspuns 2</label><br>
+                    <input type="radio" id="question1" name="question3" value="0">
+                    <label for="question1">Atunci cand cel mai mic element se afla pe prima pozitie</label><br>
+                    <input type="radio" id="question2" name="question3" value="1">
+                    <label for="question2">Atunci cand la o parcurgere nu se face nicio interschimbare</label><br>
                     <input type="radio" id="question3" name="question3" value="0">
-                    <label for="question3">Raspuns 3</label><br>
+                    <label for="question3">Atunci cand cel mai mare element se afla pe ultima pozitie</label><br>
                     <input type="radio" id="question4" name="question3" value="0">
-                    <label for="question4">Raspuns 4</label>
+                    <label for="question4">Atunci cand diferenta intre primul element si ultimul element este 0</label>
                 </div>
             </div>
 
             <div class = "quizz-box">
-                <div class = "quizz-box-question">Intrebare</div>
+                <div class = "quizz-box-question">Daca dorim sa sortam vectorul crescator, ce conditie se pune pentru interschimbarea elementelor?</div>
+                <div class = "quizz-box-points">20p</div>
                 <div class = "answers">
-                    <input type="radio" id="question1" name="question4" value="1">
-                    <label for="question1">Raspuns 1</label><br>
+                    <input type="radio" id="question1" name="question4" value="0">
+                    <label for="question1">Daca elementul curent este mai mare ca ultimul element, interschimbam</label><br>
                     <input type="radio" id="question2" name="question4" value="0">
-                    <label for="question2">Raspuns 2</label><br>
+                    <label for="question2">Daca elementul curent este egal cu elementul urmator, interschimbam</label><br>
                     <input type="radio" id="question3" name="question4" value="0">
-                    <label for="question3">Raspuns 3</label><br>
-                    <input type="radio" id="question4" name="question4" value="0">
-                    <label for="question4">Raspuns 4</label>
+                    <label for="question3">Daca elementul curent este mai mic ca elementul urmator, interschimbam</label><br>
+                    <input type="radio" id="question4" name="question4" value="1">
+                    <label for="question4">Daca elementul curent este mai mare ca elementul urmator, interschimbam</label>
                 </div>
             </div>
 
             <div class = "quizz-box">
-                <div class = "quizz-box-question">Intrebare</div>
+                <div class = "quizz-box-question">Daca pentru parcurgerea a 'n' elemente se folosteste indexul 'i', pana la ce valoarea va ajunge 'i'?</div>
+                <div class = "quizz-box-points">20p</div>
                 <div class = "answers">
-                    <input type="radio" id="question1" name="question5" value="1">
-                    <label for="question1">Raspuns 1</label><br>
-                    <input type="radio" id="question2" name="question5" value="0">
-                    <label for="question2">Raspuns 2</label><br>
+                    <input type="radio" id="question1" name="question5" value="0">
+                    <label for="question1">5</label><br>
+                    <input type="radio" id="question2" name="question5" value="1">
+                    <label for="question2">n - 2</label><br>
                     <input type="radio" id="question3" name="question5" value="0">
-                    <label for="question3">Raspuns 3</label><br>
+                    <label for="question3">n / 2</label><br>
                     <input type="radio" id="question4" name="question5" value="0">
-                    <label for="question4">Raspuns 4</label>
+                    <label for="question4">n</label>
                 </div>
             </div>
             <div id = "submit-btn" onclick="Result()">Vezi rezultate</div>
@@ -134,8 +140,9 @@
     <!--FOOTER-->
 
     <!--JS INLCUDES-->
-    <script src="../../js/nav_bar_scroll.js"></script>
-    <script src="../../js/nav_bar_mobile.js"></script>
-    <script src="../../js/quizz_result.js"></script>
+    <script src="../../js/navbar/nav_bar_scroll.js"></script>
+    <script src="../../js/navbar/nav_bar_mobile.js"></script>
+    <script src="../../js/quiz_pages/quizz_result.js"></script>
+    <script src="../../js/navbar/nav_bar_selected_item.js"></script>
     <!--JS INLCUDES-->
 </html>
